@@ -1,22 +1,23 @@
 // import all images from assets/images directory
-import img01 from "../all-images/cars-img/nissan-offer.png";
-import img02 from "../all-images/cars-img/offer-toyota.png";
-import img03 from "../all-images/cars-img/bmw-offer.png";
-import img04 from "../all-images/cars-img/nissan-offer.png";
-import img05 from "../all-images/cars-img/offer-toyota.png";
-import img06 from "../all-images/cars-img/mercedes-offer.png";
+// import img01 from "../all-images/cars-img/nissan-offer.png";
+// import img02 from "../all-images/cars-img/offer-toyota.png";
+// import img03 from "../all-images/cars-img/bmw-offer.png";
+// import img04 from "../all-images/cars-img/nissan-offer.png";
+// import img05 from "../all-images/cars-img/offer-toyota.png";
+// import img06 from "../all-images/cars-img/mercedes-offer.png";
 import img07 from "../all-images/cars-img/toyota-offer-2.png";
 import img08 from "../all-images/cars-img/mercedes-offer.png";
 
 const carData = [
   {
     id: 1,
-    brand: "Tesla",
+    brand: "Lorem Ipsum",
     rating: 112,
-    carName: "Tesla Malibu",
-    imgUrl: img01,
+    carName: "Lorem Ipsum",
+    imgUrl:
+      "https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg",
     model: "Model 3",
-    price: 50,
+    // price: 50,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -24,15 +25,15 @@ const carData = [
     description:
       " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
   },
-
   {
     id: 2,
-    brand: "Toyota",
+    brand: "Lorem Ipsum",
     rating: 102,
-    carName: "Toyota Aventador",
-    imgUrl: img02,
+    carName: "Lorem Ipsum",
+    imgUrl:
+      "https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg",
     model: "Model-2022",
-    price: 50,
+    // price: 50,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -43,12 +44,13 @@ const carData = [
 
   {
     id: 3,
-    brand: "BMW",
+    brand: "Lorem Ipsum",
     rating: 132,
-    carName: "BMW X3",
-    imgUrl: img03,
+    carName: "Lorem Ipsum",
+    imgUrl:
+      "https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg",
     model: "Model-2022",
-    price: 65,
+    // price: 65,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -59,10 +61,11 @@ const carData = [
 
   {
     id: 4,
-    brand: "Nissan",
+    brand: "Lorem Ipsum",
     rating: 102,
-    carName: "Nissan Mercielago",
-    imgUrl: img04,
+    carName: "Lorem Ipsum",
+    imgUrl:
+      "https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg",
     model: "Model-2022",
     price: 70,
     speed: "20kmpl",
@@ -75,10 +78,11 @@ const carData = [
 
   {
     id: 5,
-    brand: "Ferrari",
+    brand: "Lorem Ipsum",
     rating: 94,
-    carName: "Ferrari Camry",
-    imgUrl: img05,
+    carName: "Lorem Ipsum",
+    imgUrl:
+      "https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg",
     model: "Model-2022",
     price: 45,
     speed: "20kmpl",
@@ -91,10 +95,11 @@ const carData = [
 
   {
     id: 6,
-    brand: "Mercedes",
+    brand: "Lorem Ipsum",
     rating: 119,
-    carName: "Mercedes Benz XC90",
-    imgUrl: img06,
+    carName: "Lorem Ipsum",
+    imgUrl:
+      "https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg",
     model: "Model-2022",
     price: 85,
     speed: "20kmpl",
@@ -107,9 +112,9 @@ const carData = [
 
   {
     id: 7,
-    brand: "Audi",
+    brand: "Lorem Ipsum",
     rating: 82,
-    carName: "Audi Fiesta",
+    carName: "Lorem Ipsum",
     imgUrl: img07,
     model: "Model 3",
     price: 50,
@@ -123,9 +128,9 @@ const carData = [
 
   {
     id: 8,
-    brand: "Colorado",
+    brand: "Lorem Ipsum",
     rating: 52,
-    carName: "Rolls Royce Colorado",
+    carName: "Lorem Ipsum",
     imgUrl: img08,
     model: "Model 3",
     price: 50,

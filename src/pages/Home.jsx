@@ -8,11 +8,12 @@ import FindCarForm from "../components/UI/FindCarForm";
 import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
 import carData from "../assets/data/carData";
-import CarItem from "../components/UI/CarItem";
+import CarItem from "../components/UI/TeamItem";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 
 import BlogList from "../components/UI/BlogList";
+import OurMembers from "../components/UI/OurMembers";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
             <Row className="form__row">
               <Col lg="4" md="4">
                 <div className="find__cars-left">
-                  <h2>Find your best car here</h2>
+                  <h2><br/>Context<br/></h2>
                 </div>
               </Col>
 
@@ -53,17 +54,28 @@ const Home = () => {
         </Container>
       </section>
       {/* =========== car offer section ============= */}
-      <section>
+      {/* <section>
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5">
-              <h6 className="section__subtitle">Come with</h6>
-              <h2 className="section__title">Hot Offers</h2>
+              <h6 className="section__subtitle">Our</h6>
+              <h2 className="section__title">Team</h2>
             </Col>
 
             {carData.slice(0, 6).map((item) => (
               <CarItem item={item} key={item.id} />
             ))}
+          </Row>
+        </Container>
+      </section> */}
+       <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-5 text-center">
+              <h6 className="section__subtitle">Experts</h6>
+              <h2 className="section__title">Our Members</h2>
+            </Col>
+            <OurMembers />
           </Row>
         </Container>
       </section>
@@ -78,7 +90,6 @@ const Home = () => {
               <h6 className="section__subtitle">Our clients says</h6>
               <h2 className="section__title">Testimonials</h2>
             </Col>
-
             <Testimonial />
           </Row>
         </Container>
@@ -97,6 +108,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
     </Helmet>
   );
 };

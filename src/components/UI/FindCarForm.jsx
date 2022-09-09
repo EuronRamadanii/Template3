@@ -7,11 +7,13 @@ const FindCarForm = () => {
   return (
     <Form className="form">
       <div className=" d-flex align-items-center justify-content-between flex-wrap">
-        <FormGroup className="form__group">
+        {/* <FormGroup className="form__group">
           <input type="text" placeholder="From address" required />
-        </FormGroup>
+        </FormGroup> */}
 
-        <FormGroup className="form__group">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+
+        {/* <FormGroup className="form__group">
           <input type="text" placeholder="To address" required />
         </FormGroup>
 
@@ -32,11 +34,11 @@ const FindCarForm = () => {
             <option value="ac">AC Car</option>
             <option value="non-ac">Non AC Car</option>
           </select>
-        </FormGroup>
+        </FormGroup> */}
 
-        <FormGroup className="form__group">
+        {/* <FormGroup className="form__group">
           <button className="btn find__car-btn">Find Car</button>
-        </FormGroup>
+        </FormGroup> */}
       </div>
     </Form>
   );

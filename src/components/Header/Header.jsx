@@ -71,9 +71,10 @@ const Header = () => {
               <div className="logo">
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
-                    <i class="ri-car-line"></i>
+                    {/* <i class="ri-car-line"></i> */}
                     <span>
-                      Rent Car <br /> Service
+                      {/* Rent Car <br /> Service */}
+                      <br/>Context
                     </span>
                   </Link>
                 </h1>
@@ -86,8 +87,8 @@ const Header = () => {
                   <i class="ri-earth-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Bangladesh</h4>
-                  <h6>Sylhet City, Bangladesh</h6>
+                  {/* <h4>Bangladesh</h4> */}
+                  <h6>Lorem Ipsum</h6>
                 </div>
               </div>
             </Col>
@@ -104,7 +105,7 @@ const Header = () => {
               </div>
             </Col>
 
-            <Col
+            {/* <Col
               lg="2"
               md="3"
               sm="0"
@@ -115,7 +116,7 @@ const Header = () => {
                   <i class="ri-phone-line"></i> Request a call
                 </Link>
               </button>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>
