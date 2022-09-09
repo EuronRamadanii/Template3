@@ -72,6 +72,9 @@
   font-weight: 700;
   color: #000d6b;
 }
+.header__location{
+  margin-top:25px
+}
 
 .header__location-content h6 {
   font-weight: 600;
