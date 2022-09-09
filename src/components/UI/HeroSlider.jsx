@@ -26,7 +26,9 @@ const HeroSlider = () => {
             <h4 className="text-light mb-3">
               Systematisch. Methodisch. Effizient.
             </h4>
-            <button className="btn reserve__btn mt-4">
+            <button
+              className="btn reserve__btn mt-4"
+            >
               <Link to="/cars">Portofolio</Link>
             </button>
           </div>

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/all-images/logo.png";
 import "../../styles/header.css";
 
 const navLinks = [
@@ -43,7 +44,7 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +1-202-555-0149
+                  <i class="ri-phone-fill"></i> +49 (0)89 35477460
                 </span>
               </div>
             </Col>
@@ -72,10 +73,19 @@ const Header = () => {
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
                     {/* <i class="ri-car-line"></i> */}
-                    <span>
-                      {/* Rent Car <br /> Service */}
-                      <br/>Context
-                    </span>
+                    {/* <span>
+                      <br />
+                      Context
+                    </span> */}
+                    <Col>
+                      <Row>
+                        <img
+                          src={logo}
+                          alt=""
+                          style={{ height: "60px", width: "200px" }}
+                        />
+                      </Row>
+                    </Col>
                   </Link>
                 </h1>
               </div>
