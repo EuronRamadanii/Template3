@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
+import Context from "../assets/all-images/Context.png";
 
 import "../styles/contact.css";
 
@@ -87,6 +88,13 @@ const Contact = () => {
                 </div>
               </div>
             </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <img src={Context} alt="" />
           </Row>
         </Container>
       </section>
