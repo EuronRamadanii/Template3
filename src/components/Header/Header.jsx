@@ -82,7 +82,7 @@ const Header = () => {
                         <img
                           src={logo}
                           alt=""
-                          style={{ height: "60px", width: "200px" }}
+                          style={{ height: "100px", width: "200px" }}
                         />
                       </Row>
                     </Col>
