@@ -9,10 +9,14 @@ import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import driveImg from "../assets/all-images/drive.jpg";
 import OurMembers from "../components/UI/OurMembers";
 import "../styles/about.css";
+import { ScrollToTop } from "../components/UI/ScrollToTop";
 
 const About = () => {
   return (
     <Helmet title="About">
+      <div>
+        <ScrollToTop />
+      </div>
       <CommonSection title="About Us" />
       <AboutSection aboutClass="aboutPage" />
 

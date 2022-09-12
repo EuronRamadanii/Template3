@@ -4,10 +4,14 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import CarItem from "../components/UI/TeamItem";
 import carData from "../assets/data/carData";
+import { ScrollToTop } from "../components/UI/ScrollToTop";
 
 const CarListing = () => {
   return (
     <Helmet title="Cars">
+      <div>
+        <ScrollToTop />
+      </div>
       <CommonSection title="Car Listing" />
 
       <section>

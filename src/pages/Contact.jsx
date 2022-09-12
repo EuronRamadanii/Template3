@@ -6,6 +6,7 @@ import CommonSection from "../components/UI/CommonSection";
 import Context from "../assets/all-images/Context.png";
 
 import "../styles/contact.css";
+import { ScrollToTop } from "../components/UI/ScrollToTop";
 
 const socialLinks = [
   {
@@ -29,6 +30,9 @@ const socialLinks = [
 const Contact = () => {
   return (
     <Helmet title="Contact">
+      <div>
+        <ScrollToTop />
+      </div>
       <CommonSection title="Contact" />
       <section>
         <Container>
