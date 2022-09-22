@@ -8,7 +8,7 @@ const AboutSection = ({ aboutClass }) => {
     <section
       className="about__section"
       style={
-        aboutClass === "aboutPage"
+        aboutClass === "credentials"
           ? { marginTop: "0px" }
           : { marginTop: "280px" }
       }
@@ -18,12 +18,15 @@ const AboutSection = ({ aboutClass }) => {
           <Col lg="6" md="6">
             <div className="about__section-content">
               {/* <h4 className="section__subtitle">Clients</h4> */}
-              <h2 className="section__title">Clients</h2>
+              <h2 className="section__title">Credentials</h2>
               <p className="section__description">
-                226 / 5,000 Translation results Our customers are technology and
-                process-oriented companies that develop and manufacture complex
-                products. The majority of these are function-critical components
-                and safety-relevant overall systems.
+                Basically, we strive for long-term customer relationships. Most
+                of our clients are long-standing regular customers who decide on
+                the respective type of our assignment depending on the
+                requirements in the individual projects. The relationship of
+                trust that has grown in this way underlines the efficiency and
+                precision of our solutions. We will be happy to provide you with
+                customer references on request.
               </p>
 
               <div className="about__section-item d-flex align-items-center">

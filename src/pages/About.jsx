@@ -10,6 +10,8 @@ import driveImg from "../assets/all-images/drive.jpg";
 // import OurMembers from "../components/UI/OurMembers";
 import "../styles/about.css";
 import { ScrollToTop } from "../components/UI/ScrollToTop";
+import Branch from "../components/UI/IndustrySection";
+import Credentials from "../components/UI/Credentials";
 
 const About = () => {
   return (
@@ -17,8 +19,10 @@ const About = () => {
       <div>
         <ScrollToTop />
       </div>
-      <CommonSection title="About Us" />
+      <CommonSection title="Company" />
       <AboutSection aboutClass="aboutPage" />
+      <Branch aboutClass="industry" />
+      <Credentials aboutClass="credentials" />
 
       <section className="about__page-section">
         <Container>

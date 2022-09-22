@@ -12,7 +12,7 @@ const navLinks = [
   },
   {
     path: "/about",
-    display: "About",
+    display: "Company",
   },
   {
     path: "/cars",
@@ -27,6 +27,10 @@ const navLinks = [
     path: "/contact",
     display: "Contact",
   },
+  // {
+  //   path: "/company",
+  //   display: "Company",
+  // },
 ];
 
 const Header = () => {
