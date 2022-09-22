@@ -163,7 +163,17 @@
 .nav__active {
   color: #f9a826;
 }
-
+.hover-dropdown {
+  background-color: transparent;
+}
+.hover-dropdown .btn {
+  background-color: transparent;
+  border: none;
+}
+.hover-dropdown .btn:hover {
+  color: #f9a826 !important;
+  background-color: transparent;
+}
 @media only screen and (max-width: 768px) {
   .header__top,
   .header__middle,
