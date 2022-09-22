@@ -51,8 +51,17 @@ const Header = () => {
   };
   const navigate = useNavigate();
 
-  const goToBlogs = () => {
+  const goToClient = () => {
     navigate("/blogs");
+  };
+  const goToManagment = () => {
+    navigate("/managment");
+  };
+  const goToLocations = () => {
+    navigate("/locations");
+  };
+  const goToActivities = () => {
+    navigate("/activities");
   };
 
   return (
@@ -88,7 +97,7 @@ const Header = () => {
       {/* =============== header middle =========== */}
       <div className="header__middle">
         <Container>
-          <Row style={{justifyContent: 'space-between'}}>
+          <Row style={{ justifyContent: "space-between" }}>
             <Col lg="4" md="3" sm="4">
               <div className="logo">
                 <h1>
@@ -174,7 +183,7 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
-                
+
                 {/* <div className="dropdown">
                   <button
                     className="btn btn-secondary dropdown-toggle"
@@ -221,13 +230,16 @@ const Header = () => {
                           : "nav__item link"
                       }
                     > */}
-                    <Dropdown.Item onClick={goToBlogs}>Action</Dropdown.Item>
+                    <Dropdown.Item onClick={goToClient}>Client</Dropdown.Item>
                     {/* </NavLink> */}
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item onClick={goToManagment}>
+                      Managment
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item onClick={goToLocations}>
+                      Locations
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={goToActivities}>
+                      Company Activities
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
