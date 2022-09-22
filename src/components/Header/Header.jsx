@@ -52,7 +52,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const goToClient = () => {
-    navigate("/blogs");
+    navigate("/client");
   };
   const goToManagment = () => {
     navigate("/managment");
@@ -183,37 +183,9 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
-
-                {/* <div className="dropdown">
-                  <button
-                    className="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </button>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <button className="dropdown-item" type="button">
-                        Action
-                      </button>
-                    </li>
-                    <li>
-                      <button className="dropdown-item" type="button">
-                        Another action
-                      </button>
-                    </li>
-                    <li>
-                      <button className="dropdown-item" type="button">
-                        Something else here
-                      </button>
-                    </li>
-                  </ul>
-                </div> */}
-
                 <Dropdown
                   className="hover-dropdown"
+                  show={isHovering}
                   onMouseOver={enterDropdown}
                   onMouseLeave={leaveDropdown}
                 >
@@ -221,17 +193,7 @@ const Header = () => {
                     Dropdown Button
                   </Dropdown.Toggle>
                   <Dropdown.Menu show={isHovering}>
-                    {/* <NavLink
-                      to="/blogs"
-                      style={{ color: "#1e2125" }}
-                      className={(navClass) =>
-                        navClass.isActive
-                          ? "nav__active nav__item"
-                          : "nav__item link"
-                      }
-                    > */}
                     <Dropdown.Item onClick={goToClient}>Client</Dropdown.Item>
-                    {/* </NavLink> */}
                     <Dropdown.Item onClick={goToManagment}>
                       Managment
                     </Dropdown.Item>
