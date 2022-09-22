@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/all-images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
+import { useState } from "react";
 
 const navLinks = [
   {
@@ -37,8 +38,22 @@ const navLinks = [
 
 const Header = () => {
   const menuRef = useRef(null);
+  const [isHovering, setIsHovering] = useState(false);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
+  const enterDropdown = () => {
+    setIsHovering(true);
+  };
+  const leaveDropdown = () => {
+    setIsHovering(false);
+    console.log(isHovering);
+  };
+  const navigate = useNavigate();
+
+  const goToBlogs = () => {
+    navigate("/blogs");
+  };
 
   return (
     <header className="header">
@@ -73,7 +88,7 @@ const Header = () => {
       {/* =============== header middle =========== */}
       <div className="header__middle">
         <Container>
-          <Row>
+          <Row style={{justifyContent: 'space-between'}}>
             <Col lg="4" md="3" sm="4">
               <div className="logo">
                 <h1>
@@ -159,20 +174,7 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
-                <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Company
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="/client">Client</Dropdown.Item>
-                    <Dropdown.Item href="/managment">Managment</Dropdown.Item>
-                    <Dropdown.Item href="/locations">Locations</Dropdown.Item>
-                    <Dropdown.Item href="/activities">
-                      Company Activities
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
+                
                 {/* <div className="dropdown">
                   <button
                     className="btn btn-secondary dropdown-toggle"
@@ -200,6 +202,35 @@ const Header = () => {
                     </li>
                   </ul>
                 </div> */}
+
+                <Dropdown
+                  className="hover-dropdown"
+                  onMouseOver={enterDropdown}
+                  onMouseLeave={leaveDropdown}
+                >
+                  <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                    Dropdown Button
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu show={isHovering}>
+                    {/* <NavLink
+                      to="/blogs"
+                      style={{ color: "#1e2125" }}
+                      className={(navClass) =>
+                        navClass.isActive
+                          ? "nav__active nav__item"
+                          : "nav__item link"
+                      }
+                    > */}
+                    <Dropdown.Item onClick={goToBlogs}>Action</Dropdown.Item>
+                    {/* </NavLink> */}
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
             </div>
 
@@ -207,7 +238,7 @@ const Header = () => {
               <div className="search__box">
                 <input type="text" placeholder="Search" />
                 <span>
-                  <i class="ri-search-line"></i>
+                  <i className="ri-search-line"></i>
                 </span>
               </div>
             </div>
