@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/all-images/logo.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
 
 const navLinks = [
@@ -10,10 +12,10 @@ const navLinks = [
     path: "/home",
     display: "Home",
   },
-  {
-    path: "/about",
-    display: "Company",
-  },
+  // {
+  //   path: "/about",
+  //   display: "Company",
+  // },
   {
     path: "/cars",
     display: "Team",
@@ -28,7 +30,7 @@ const navLinks = [
     display: "Contact",
   },
   // {
-  //   path: "/company",
+  //   path: "/client",
   //   display: "Company",
   // },
 ];
@@ -157,6 +159,47 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
+                <Dropdown>
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    Company
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="/client">Client</Dropdown.Item>
+                    <Dropdown.Item href="/managment">Managment</Dropdown.Item>
+                    <Dropdown.Item href="/locations">Locations</Dropdown.Item>
+                    <Dropdown.Item href="/activities">
+                      Company Activities
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                {/* <div className="dropdown">
+                  <button
+                    className="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </button>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <button className="dropdown-item" type="button">
+                        Action
+                      </button>
+                    </li>
+                    <li>
+                      <button className="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button className="dropdown-item" type="button">
+                        Something else here
+                      </button>
+                    </li>
+                  </ul>
+                </div> */}
               </div>
             </div>
 
