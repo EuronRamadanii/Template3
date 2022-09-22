@@ -25,6 +25,7 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/client" element={<AboutSection />} />
       <Route path="/managment" element={<Managment />} />
+      <Route path="/locations" element={<Locations />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/activities" element={<CompanyActivities />} />
       <Route path="/contact" element={<Contact />} />
