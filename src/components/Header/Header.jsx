@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/all-images/logo.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dropdown  from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
 
 const navLinks = [
@@ -33,6 +35,7 @@ const Header = () => {
   const menuRef = useRef(null);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
 
   return (
     <header className="header">
@@ -153,6 +156,48 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
+                {/* <div className="dropdown">
+                  <button
+                    className="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </button>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <button className="dropdown-item" type="button">
+                        Action
+                      </button>
+                    </li>
+                    <li>
+                      <button className="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button className="dropdown-item" type="button">
+                        Something else here
+                      </button>
+                    </li>
+                  </ul>
+                </div> */}
+                <Dropdown>
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    Dropdown Button
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
             </div>
 
@@ -160,7 +205,7 @@ const Header = () => {
               <div className="search__box">
                 <input type="text" placeholder="Search" />
                 <span>
-                  <i class="ri-search-line"></i>
+                  <i className="ri-search-line"></i>
                 </span>
               </div>
             </div>
