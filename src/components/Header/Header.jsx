@@ -13,10 +13,10 @@ const navLinks = [
     path: "/home",
     display: "Home",
   },
-  {
-    path: "/about",
-    display: "Company",
-  },
+  // {
+  //   path: "/about",
+  //   display: "Company",
+  // },
   {
     path: "/cars",
     display: "Team",
@@ -31,7 +31,7 @@ const navLinks = [
     display: "Contact",
   },
   // {
-  //   path: "/company",
+  //   path: "/client",
   //   display: "Company",
   // },
 ];
@@ -174,6 +174,7 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
+                
                 {/* <div className="dropdown">
                   <button
                     className="btn btn-secondary dropdown-toggle"
@@ -201,6 +202,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </div> */}
+
                 <Dropdown
                   className="hover-dropdown"
                   onMouseOver={enterDropdown}
