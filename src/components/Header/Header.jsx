@@ -47,7 +47,6 @@ const Header = () => {
   };
   const leaveDropdown = () => {
     setIsHovering(false);
-    console.log(isHovering);
   };
   const navigate = useNavigate();
 
