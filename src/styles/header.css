@@ -38,6 +38,7 @@
   color: #fff;
 }
 
+
 /* ============ header middle style =========== */
 
 .header__middle {
@@ -211,6 +212,10 @@
     color: #6b6600;
     font-weight: 600;
     font-size: 0.9rem;
+  }
+
+  .navClass{
+    color: '#6b6600'
   }
 
   .menu__active {
