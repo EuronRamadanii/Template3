@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
+import { Container, Row, Col, Form, FormGroup, Input, Label } from "reactstrap";
 
 import { useParams } from "react-router-dom";
 import blogData from "../assets/data/blogData.js";
@@ -23,9 +23,9 @@ const BlogDetails = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="8" md="8">
+            <Col lg="7" md="8">
               <div className="blog__details">
-                <img src={blog.imgUrl} alt="" className="w-100" />
+              <h6 className="section__subtitle">Job Profile</h6>
                 <h2 className="section__title mt-4">{blog.author}</h2>
 
                 <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
@@ -71,17 +71,24 @@ const BlogDetails = () => {
                       {blog.description4}
                     </p>
                   </div>
-                  <div className="about__section-item d-flex align-items-center">
+                  {blog.description5 == null ? '' : <div className="about__section-item d-flex align-items-center">
                     <p className=" d-flex align-items-center gap-2">
                       {" "}
                       <i class="ri-checkbox-circle-line"> </i>
                       {blog.description5}
                     </p>
-                  </div>
+                  </div>}
+                  {blog.description6 == null ? '' : <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description6}
+                    </p>
+                  </div>}
                 </div>
 
                 <div style={{ width: "70%" }}>
-                  <h4>{blog.date2}</h4>
+                  <h4 className="mt-4">{blog.date2}</h4>
                   <div className="about__section-item d-flex align-items-center">
                     <p className=" d-flex align-items-center gap-2">
                       {" "}
@@ -117,9 +124,23 @@ const BlogDetails = () => {
                       {blog.description55}
                     </p>
                   </div>
+                  {blog.description66 == null ? '' : <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description66}
+                    </p>
+                  </div>}
+                  {/* <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description66}
+                    </p>
+                  </div> */}
                 </div>
                 <div style={{ width: "70%" }}>
-                  <h4>{blog.date3}</h4>
+                  <h4 className="mt-4">{blog.date3}</h4>
                   <div className="about__section-item d-flex align-items-center">
                     <p className=" d-flex align-items-center gap-2">
                       {" "}
@@ -142,12 +163,11 @@ const BlogDetails = () => {
                     </p>
                   </div>
                 </div>
-
-                <h6 className="fw-normal">
-                  <blockquote className=" fs-4">{blog.quote}</blockquote>
-                </h6>
                 <p className="section__description">{blog.description}</p>
               </div>
+              <h2 className="section__description_career" style={{lineHeight:"4"}}>
+                  <blockquote>{blog.quote}</blockquote>
+                </h2>
               </Col>
               {/* <div className="comment__list mt-5">
                 <h4 className="mb-5">3 Comments</h4>
@@ -213,7 +233,75 @@ const BlogDetails = () => {
                 </div>
               ))}
             </Col> */}
+            <Col lg="5" md="7" className="mt-5">
+            <img src={blog.imgUrl} alt="" className="w-100" />
+              <h6 className="fw-bold mb-4 mt-5">Application Form</h6>
+
+              <Form>
+                <FormGroup className="contact__form">
+                  <Input placeholder="First Name" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Last Name" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="E-mail" type="email" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Company Name" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Position" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Phone" type="tel" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <textarea
+                    rows="5"
+                    placeholder="Message"
+                    className="textarea"
+                  ></textarea>
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input type="file" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input
+                    placeholder="How did you find out about us?"
+                    type="text"
+                  />
+                </FormGroup>
+                {/* <FormGroup className="contact__form">
+                  <Input placeholder="Your Name" type="text" />
+                </FormGroup> */}
+                <h5>Privacy Policy*</h5>
+                <FormGroup className="contact__form" check>
+                  <Input type="checkbox" />
+                  <Label check>
+                    I want to receive a copy of this message via e-mail.
+                  </Label>
+                </FormGroup>
+                <FormGroup className="contact__form" check>
+                  <Input type="checkbox" />
+                  <Label check>
+                    I have read the <span>Privacy Policy</span> note. I agree
+                    that my data will be collected and stored electronically to
+                    answer my request.
+                  </Label>
+                </FormGroup>
+                <button
+                  className=" contact__btn"
+                  type="submit"
+                  style={{ marginTop: "20px" }}
+                >
+                  Send Message
+                </button>
+              </Form>
+             
+            </Col>
           </Row>
+          
         </Container>
       </section>
     </Helmet>

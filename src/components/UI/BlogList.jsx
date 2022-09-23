@@ -53,7 +53,7 @@ const BlogItem = ({ item }) => {
           </div>
         </div>
       </div> */}
-      <Link to={`/blogs/${title}`} className="read__more">
+      <Link to={`/blogs/${title}`} className="read__more" style={{lineHeight:"2"}}>
           {author}
       </Link>
       
