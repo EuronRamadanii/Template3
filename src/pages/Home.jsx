@@ -5,7 +5,7 @@ import Helmet from "../components/Helmet/Helmet";
 
 import { Container, Row, Col } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
-import AboutSection from "../components/UI/AboutSection";
+// import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
 // import carData from "../assets/data/carData";
 // import CarItem from "../components/UI/TeamItem";
@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 import BlogList from "../components/UI/BlogList";
 import OurMembers from "../components/UI/OurMembers";
 import { ScrollToTop } from "../components/UI/ScrollToTop";
-import About from "./About";
+// import About from "./About";
 
 const Home = () => {
   AOS.init({

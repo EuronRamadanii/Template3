@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import service1 from "../../assets/data/service1";
 import "../../styles/services-list.css";
-import service12 from "../../assets/all-images/service_1.2671af4c.png";
+// import service12 from "../../assets/all-images/service_1.2671af4c.png";
 import servicePhoto from "../../assets/all-images/services.jpg";
 
 const Projektierung = ({ item }) => {

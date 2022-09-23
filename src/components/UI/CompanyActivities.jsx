@@ -3,9 +3,9 @@ import { Container, Row, Col } from "reactstrap";
 import "../../styles/about-section.css";
 import BecomeDriverSection from "./BecomeDriverSection";
 import CommonSection from "./CommonSection";
-import driveImg from "../../assets/all-images/drive.jpg";
-import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
-import photo2 from "../../assets/all-images/max2.jpg";
+// import driveImg from "../../assets/all-images/drive.jpg";
+// import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
+// import photo2 from "../../assets/all-images/max2.jpg";
 
 const CompanyActivities = ({ aboutClass }) => {
   return (

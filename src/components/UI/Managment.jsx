@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../../styles/about-section.css";
-import BecomeDriverSection from "./BecomeDriverSection";
+// import BecomeDriverSection from "./BecomeDriverSection";
 import CommonSection from "./CommonSection";
-import driveImg from "../../assets/all-images/drive.jpg";
+// import driveImg from "../../assets/all-images/drive.jpg";
 // import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
-import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
-import photo2 from "../../assets/all-images/max2.jpg";
+// import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
+// import photo2 from "../../assets/all-images/max2.jpg";
 import "../../styles/managment.css";
 
 const Managment = ({ aboutClass }) => {
@@ -236,6 +236,7 @@ const Managment = ({ aboutClass }) => {
             scrolling="no"
             marginheight="0"
             marginwidth="0"
+            title="r"
           ></iframe>
 
           <iframe
@@ -244,6 +245,7 @@ const Managment = ({ aboutClass }) => {
             frameborder="0"
             scrolling="no"
             marginheight="0"
+            title="r"
             marginwidth="0"
           ></iframe>
 
@@ -255,6 +257,7 @@ const Managment = ({ aboutClass }) => {
               scrolling="no"
               marginheight="0"
               marginwidth="0"
+              title="r"
             ></iframe>
           </div>
         </Row>
