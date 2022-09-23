@@ -41,8 +41,8 @@ const Managment = ({ aboutClass }) => {
           </Row>
         </Container>
         <Container>
-          <Row>
-            <Col lg="6" md="6">
+          <Row className="management-con">
+            <Col lg="6" md="9">
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}
@@ -53,7 +53,7 @@ const Managment = ({ aboutClass }) => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">Stefan Egerer</h2>
@@ -107,8 +107,8 @@ const Managment = ({ aboutClass }) => {
         <br />
         <br />
         <Container>
-          <Row>
-            <Col lg="6" md="6">
+          <Row className="management-con2">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">Karsten Schuster</h2>
@@ -157,7 +157,7 @@ const Managment = ({ aboutClass }) => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}

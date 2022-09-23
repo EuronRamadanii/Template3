@@ -215,7 +215,7 @@ const Header = () => {
             </div>
 
             <div className="nav__right">
-              <div className="search__box" style={{ marginLeft: "450px" }}>
+              <div className="search__box">
                 <input type="text" placeholder="Search" />
                 <span>
                   <i className="ri-search-line"></i>
