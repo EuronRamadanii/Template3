@@ -200,51 +200,36 @@ const Managment = ({ aboutClass }) => {
       </section>
       <Container>
         <Row>
-          {/* <Col lg="6" md="6" sm="12">
-            <div className="about__page-img">
-              <img src={driveImg} alt="" className="w-100 rounded-3" />
-            </div>
-          </Col> */}
-          {/* <Col lg="6" md="6" sm="12"> */}
-          <h1>
+          <h1 style={{ textAlign: "center" }}>The history of Context</h1>
+          <h3 style={{ marginTop: "20px" }}>
             CONTEXT wurde 1997 von einem Expertenteam für Methodenanwendung und
             -entwicklung mit der Idee gegründet, Technologieunternehmen bei der
             Lösung ihrer qualitäts- und prozessspezifischen Herausforderungen zu
             unterstützen. Heute zählt CONTEXT zu den professionellen Partnern
             von technologiegetriebenen Unternehmen im Bereich
             Qualitätsmanagement.
-          </h1>
-          {/* <div className="about__page-content">
-              <h2 className="section__title">
-                We Are Committed To Provide Safe Ride Solutions
-              </h2>
+          </h3>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <iframe
+            style={{ width: "45%", height: "300px" }}
+            src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
 
-              <p className="section__description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet veniam assumenda aperiam accusantium ex autem
-                perferendis repellendus nostrum delectus. Nemo et dolore est
-                tempore rem minima adipisci magni dolorum ipsam.
-              </p>
-
-              <p className="section__description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet veniam assumenda aperiam accusantium ex autem
-                perferendis repellendus nostrum delectus. Nemo et dolore est
-                tempore rem minima adipisci magni dolorum ipsam.
-              </p>
-
-              <div className=" d-flex align-items-center gap-3 mt-4">
-                <span className="fs-4">
-                  <i class="ri-phone-line"></i>
-                </span>
-
-                <div>
-                  <h6 className="section__subtitle">Need Any Help?</h6>
-                  <h4>+00123456789</h4>
-                </div>
-              </div>
-            </div> */}
-          {/* </Col> */}
+          <iframe
+            style={{ width: "45%", height: "300px" }}
+            src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
         </Row>
       </Container>
       <BecomeDriverSection />
