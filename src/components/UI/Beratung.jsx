@@ -46,7 +46,7 @@ const ServiceItem = ({ item }) => (
           ))}
         </div>
       </Col>
-      <Col>
+      <Col className="fixed-photo">
         <img
           src={servicePhoto}
           style={{

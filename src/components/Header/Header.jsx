@@ -242,7 +242,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="nav__right">
+            <div className="nav__right fshihe">
               <div className="search__box">
                 <input type="text" placeholder="Search" />
                 <span>

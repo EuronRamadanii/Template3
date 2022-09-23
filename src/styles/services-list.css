@@ -33,3 +33,13 @@
   margin-left: 20px !important;
  }
 }
+@media only screen and (max-width: 1200px) {
+  .fixed-photo img {
+    margin-left: 20px !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fixed-photo {
+    display: none;
+  }
+}
