@@ -41,8 +41,8 @@ const Managment = ({ aboutClass }) => {
           </Row>
         </Container>
         <Container>
-          <Row>
-            <Col lg="6" md="6">
+          <Row className="management-con">
+            <Col lg="6" md="9">
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}
@@ -53,14 +53,14 @@ const Managment = ({ aboutClass }) => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">Stefan Egerer</h2>
                 {/* <p className="section__description">Stefan Egerer</p> */}
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Studium: FH München
                     sit amet.
                   </p>
@@ -72,7 +72,7 @@ const Managment = ({ aboutClass }) => {
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Abschluss:
                     Dipl.-Ing.
                   </p>
@@ -83,18 +83,18 @@ const Managment = ({ aboutClass }) => {
                   </p> */}
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Wurzeln:
                     Entwicklungsdienstleistung
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Funktion: Vorstand
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Fachgebiete:
                     Technische Risikoanalysen (FMEA, FTA), Methodenberatung und
                     -entwicklung, Innovations- und Kreativitätsmethoden
@@ -107,15 +107,15 @@ const Managment = ({ aboutClass }) => {
         <br />
         <br />
         <Container>
-          <Row>
-            <Col lg="6" md="6">
+          <Row className="management-con2">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">Karsten Schuster</h2>
                 {/* <p className="section__description">Stefan Egerer</p> */}
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Studium: Universität
                     Jena, TU München
                   </p>
@@ -127,7 +127,7 @@ const Managment = ({ aboutClass }) => {
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Abschluss:
                     Dipl.-Ing., Dipl.-Wirtsch.-Ing.
                   </p>
@@ -138,18 +138,18 @@ const Managment = ({ aboutClass }) => {
                   </p> */}
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Wurzeln:
                     Unternehmensberatung, Entwicklungsdienstleistung
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Funktion: Vorstand
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Fachgebiete:
                     Prozessmanagement
                   </p>
@@ -157,7 +157,7 @@ const Managment = ({ aboutClass }) => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}

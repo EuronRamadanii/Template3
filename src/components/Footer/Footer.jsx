@@ -38,7 +38,7 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row>
-          <Col lg="4" md="4" sm="12">
+          <Col lg="4" md="4" sm="12" className="foterlogo">
             <div className="logo footer__logo" style={{marginBottom: '130px'}}>
               <h1>
                 <Link to="/home" className=" d-flex align-items-center gap-2">
