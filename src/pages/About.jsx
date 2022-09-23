@@ -26,11 +26,11 @@ const About = () => {
       <section className="about__page-section">
         <Container>
           <Row>
-            <Col lg="6" md="6" sm="12">
+            {/* <Col lg="6" md="6" sm="12">
               <div className="about__page-img">
                 <img src={driveImg} alt="" className="w-100 rounded-3" />
               </div>
-            </Col>
+            </Col> */}
 
             <Col lg="6" md="6" sm="12">
               <div className="about__page-content">

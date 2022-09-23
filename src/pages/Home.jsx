@@ -17,6 +17,7 @@ import "aos/dist/aos.css";
 import BlogList from "../components/UI/BlogList";
 import OurMembers from "../components/UI/OurMembers";
 import { ScrollToTop } from "../components/UI/ScrollToTop";
+import About from "./About";
 
 const Home = () => {
   AOS.init({
@@ -52,7 +53,8 @@ const Home = () => {
         </div>
       </section>
       {/* =========== about section ================ */}
-      <AboutSection />
+      {/* <AboutSection /> */}
+      {/* <About /> */}
       {/* ========== services section ============ */}
       <section data-aos="zoom-in" data-aos-duration="1700">
         <Container>

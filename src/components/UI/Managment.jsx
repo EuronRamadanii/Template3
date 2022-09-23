@@ -12,7 +12,7 @@ import "../../styles/managment.css";
 const Managment = ({ aboutClass }) => {
   return (
     <>
-      <CommonSection title="Managment" />
+      <CommonSection title="" />
       <section
         className="about__section"
         style={
@@ -22,47 +22,16 @@ const Managment = ({ aboutClass }) => {
         }
       >
         <Container>
-          <h1>
+          <h1 style={{ textAlign: "center" }}>Our Managment</h1>
+          <br />
+          <h5 style={{ textAlign: "center" }}>
             CONTEXT ist inhabergeführt und konzernunabhängig. Den Vorstand
             bilden Herr Egerer und Herr Schuster.
-          </h1>
+          </h5>
+          <br />
           <Row>
-            <Col lg="6" md="6">
-              {/* <div className="about__section-content">
-                <h4 className="section__subtitle">Clients</h4>
-                <h2 className="section__title">Clients</h2>
-                <p className="section__description">
-                  226 / 5,000 Translation results Our customers are technology
-                  and process-oriented companies that develop and manufacture
-                  complex products. The majority of these are function-critical
-                  components and safety-relevant overall systems.
-                </p>
-
-                <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
-                    <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
-                    sit amet.
-                  </p>
-
-                  <p className="section__description d-flex align-items-center gap-2">
-                    <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
-                    sit amet.
-                  </p>
-                </div>
-
-                <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
-                    <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
-                    sit amet.
-                  </p>
-
-                  <p className="section__description d-flex align-items-center gap-2">
-                    <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
-                    sit amet.
-                  </p>
-                </div>
-              </div> */}
-            </Col>
+            {/* <Col lg="6" md="6">
+            </Col> */}
 
             <Col lg="6" md="6">
               {/* <div className="about__img"> */}
@@ -135,6 +104,8 @@ const Managment = ({ aboutClass }) => {
             </Col>
           </Row>
         </Container>
+        <br />
+        <br />
         <Container>
           <Row>
             <Col lg="6" md="6">
@@ -202,17 +173,17 @@ const Managment = ({ aboutClass }) => {
       <Container>
         <Row>
           <h1 style={{ textAlign: "center" }}>The history of Context</h1>
-          <h3 style={{ marginTop: "20px" }}>
+          <h5 style={{ marginTop: "20px" }}>
             CONTEXT wurde 1997 von einem Expertenteam für Methodenanwendung und
             -entwicklung mit der Idee gegründet, Technologieunternehmen bei der
             Lösung ihrer qualitäts- und prozessspezifischen Herausforderungen zu
             unterstützen. Heute zählt CONTEXT zu den professionellen Partnern
             von technologiegetriebenen Unternehmen im Bereich
             Qualitätsmanagement.
-          </h3>
+          </h5>
         </Row>
       </Container>
-      <Container style={{ marginBottom: "20px" }}>
+      <Container style={{ marginBottom: "20px", marginTop: "20px" }}>
         <Row>
           <div className="boxes">
             <div className="box">
@@ -256,10 +227,10 @@ const Managment = ({ aboutClass }) => {
           </div>
         </Row>
       </Container>
-      <Container>
+      <Container style={{ marginTop: "100px" }}>
         <Row>
           <iframe
-            style={{ width: "45%", height: "300px" }}
+            style={{ width: "50%", height: "300px" }}
             src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameborder="0"
             scrolling="no"
@@ -268,7 +239,7 @@ const Managment = ({ aboutClass }) => {
           ></iframe>
 
           <iframe
-            style={{ width: "45%", height: "300px" }}
+            style={{ width: "50%", height: "300px" }}
             src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameborder="0"
             scrolling="no"
@@ -278,7 +249,7 @@ const Managment = ({ aboutClass }) => {
 
           <div style={{ marginTop: "20px" }}>
             <iframe
-              style={{ width: "45%", height: "300px" }}
+              style={{ width: "100%", height: "300px" }}
               src="https://maps.google.com/maps?q=Lessingstra%C3%9Fe%2072,%2038440,%20Wolfsburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
@@ -288,12 +259,12 @@ const Managment = ({ aboutClass }) => {
           </div>
         </Row>
       </Container>
-      <Container style={{ marginBottom: "50px" }}>
-        <h3>Firmenaktivitäten</h3>
-        <p>
+      <Container style={{ marginBottom: "50px", marginTop: "100px" }}>
+        <h3 style={{ textAlign: "center" }}>Firmenaktivitäten</h3>
+        <h5 style={{ textAlign: "center", marginBottom: "20px" }}>
           In dieser Sektion finden Sie unser News-Archiv, das wir zur besseren
           Übersicht nach Themenblöcken und chronologisch geordnet haben.
-        </p>
+        </h5>
         <Row>
           <div className="boxes2">
             <div
