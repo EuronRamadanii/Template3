@@ -62,7 +62,11 @@ ul {
   font-size: 0.9rem;
   line-height: 30px;
 }
-
+.section__description_career{
+  color: #7c8a97;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
 section {
   padding: 50px 0px;
 }

@@ -4,6 +4,7 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import BlogList from "../components/UI/BlogList";
 import { ScrollToTop } from "../components/UI/ScrollToTop";
+import Career from "../components/UI/Career";
 
 const Blog = () => {
   return (
@@ -14,6 +15,8 @@ const Blog = () => {
       <CommonSection title="Blogs" />
       <section>
         <Container>
+      <Career aboutClass="aboutPage" />
+
           <Row>
             <BlogList />
             <BlogList />
