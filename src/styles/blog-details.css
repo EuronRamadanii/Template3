@@ -3,7 +3,10 @@
 }
 
 blockquote {
-  line-height: 35px;
+  font-size: larger;
+  color: #f9a826;
+  line-height: 1.5;
+  padding-top: 20px;
 }
 
 .single__comment img {

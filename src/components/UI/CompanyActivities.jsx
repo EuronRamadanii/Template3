@@ -3,9 +3,9 @@ import { Container, Row, Col } from "reactstrap";
 import "../../styles/about-section.css";
 import BecomeDriverSection from "./BecomeDriverSection";
 import CommonSection from "./CommonSection";
-import driveImg from "../../assets/all-images/drive.jpg";
-import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
-import photo2 from "../../assets/all-images/max2.jpg";
+// import driveImg from "../../assets/all-images/drive.jpg";
+// import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
+// import photo2 from "../../assets/all-images/max2.jpg";
 
 const CompanyActivities = ({ aboutClass }) => {
   return (
@@ -36,7 +36,7 @@ const CompanyActivities = ({ aboutClass }) => {
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}
-                  src={photo1}
+                  src="https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg"
                   alt=""
                   className="w-100"
                 />
@@ -125,7 +125,7 @@ const CompanyActivities = ({ aboutClass }) => {
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}
-                  src={photo2}
+                  src='https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg'
                   alt=""
                   className="w-100"
                 />

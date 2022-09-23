@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
 import { useState } from "react";
+import english from "../../assets/all-images/united-kingdom.png";
+import deutsch from "../../assets/all-images/germany.png";
 
 const navLinks = [
   {
@@ -24,12 +26,13 @@ const navLinks = [
 
   {
     path: "/blogs",
-    display: "Blog",
+    display: "Career",
   },
   {
     path: "/contact",
     display: "Contact",
   },
+
   // {
   //   path: "/client",
   //   display: "Company",
@@ -39,6 +42,7 @@ const navLinks = [
 const Header = () => {
   const menuRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
+  const [isHovering2, setIsHovering2] = useState(false);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
@@ -48,6 +52,12 @@ const Header = () => {
   const leaveDropdown = () => {
     setIsHovering(false);
   };
+  const enterDropdown2 = () => {
+    setIsHovering2(true);
+  };
+  const leaveDropdown2 = () => {
+    setIsHovering2(false);
+  };
   const navigate = useNavigate();
 
   const goToClient = () => {
@@ -56,11 +66,14 @@ const Header = () => {
   const goToManagment = () => {
     navigate("/managment");
   };
-  const goToLocations = () => {
-    navigate("/locations");
+  const goToProjektierung = () => {
+    navigate("/services/project");
   };
-  const goToActivities = () => {
-    navigate("/activities");
+  const goToBeratung = () => {
+    navigate("/services/beratung");
+  };
+  const goToSchulungen = () => {
+    navigate("/services/schulungen");
   };
 
   return (
@@ -184,36 +197,80 @@ const Header = () => {
                 ))}
                 <Dropdown
                   className="hover-dropdown"
+                  show={isHovering2}
+                  onMouseOver={enterDropdown2}
+                  onMouseLeave={leaveDropdown2}
+                >
+                  <Dropdown.Toggle
+                    variant="secondary"
+                    id="dropdown-basic"
+                    style={{ color: "#6b6600" }}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    }
+                  >
+                    Leistungen
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu show={isHovering2}>
+                    <Dropdown.Item onClick={goToProjektierung}>
+                      Projektierung & Umsetzung
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={goToBeratung}>
+                      Beratung
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={goToSchulungen}>
+                      Schulungen
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+
+                <Dropdown
+                  className="hover-dropdown"
                   show={isHovering}
                   onMouseOver={enterDropdown}
                   onMouseLeave={leaveDropdown}
                 >
-                  <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                    Dropdown Button
+                  <Dropdown.Toggle
+                    variant="secondary"
+                    id="dropdown-basic"
+                    style={{ color: "#6b6600" }}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    }
+                  >
+                    Company
                   </Dropdown.Toggle>
                   <Dropdown.Menu show={isHovering}>
                     <Dropdown.Item onClick={goToClient}>Client</Dropdown.Item>
                     <Dropdown.Item onClick={goToManagment}>
                       Managment
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={goToLocations}>
+                    {/* <Dropdown.Item onClick={goToLocations}>
                       Locations
                     </Dropdown.Item>
                     <Dropdown.Item onClick={goToActivities}>
                       Company Activities
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
             </div>
 
-            <div className="nav__right">
+            <div className="nav__right fshihe">
               <div className="search__box">
                 <input type="text" placeholder="Search" />
                 <span>
                   <i className="ri-search-line"></i>
                 </span>
               </div>
+            </div>
+            <div>
+              <img
+                src={english}
+                style={{ height: "20px", marginRight: "10px" }}
+                alt=""
+              />
+              <img src={deutsch} style={{ height: "20px" }} alt="" />
             </div>
           </div>
         </Container>
