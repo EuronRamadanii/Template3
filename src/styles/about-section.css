@@ -14,18 +14,13 @@
   
 
 }
-.karriereright{
-  margin-top: 169px;
-}
-.subtitle-paragraph{
-}
 @media only screen and (max-width: 992px) {
   .about__section-content h2 {
     font-size: 1.5rem;
   }
-  .karriereright{
+  /* .karriereright{
     margin-top: 20px;
-  }
+  } */
   .about__section-item {
     column-gap: 3rem;
   }

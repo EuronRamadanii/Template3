@@ -4,6 +4,7 @@
 
 blockquote {
   line-height: 35px;
+  padding-left: 0px;
 }
 
 .single__comment img {
