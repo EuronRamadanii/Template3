@@ -76,7 +76,7 @@ const Managment = ({ aboutClass }) => {
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}
-                  src={photo1}
+                  src="https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg"
                   alt=""
                   className="w-100"
                 />
@@ -189,7 +189,7 @@ const Managment = ({ aboutClass }) => {
               <div className="about__img">
                 <img
                   style={{ height: "300px" }}
-                  src={photo2}
+                  src="https://previews.123rf.com/images/hollygraphic/hollygraphic1510/hollygraphic151000055/46527906-man-in-business-suit-icon-vector-symbol.jpg"
                   alt=""
                   className="w-100"
                 />
