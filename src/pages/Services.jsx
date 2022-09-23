@@ -23,11 +23,12 @@ const ServiceItem = ({ item }) => (
         className="mb-3 d-flex"
         style={{ alignItems: "flex-end", justifyContent: "flex-start" }}
       >
-        <i class={item.icon} style={{marginRight: '5px'}} />
+        <i class={item.icon} style={{ marginRight: "5px" }} />
         <h1>{item.title}</h1>
       </span>
 
       <p className="section__description">{item.desc}</p>
+      <p className="section__description">{item.desc2}</p>
       {item.subLinks.map((sub) => (
         <div style={{ marginLeft: "40px" }}>
           <h4>{sub.title}</h4>
