@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
+import { Container, Row, Col, Form, FormGroup, Input, Label } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import Context from "../assets/all-images/Context.png";
@@ -42,10 +42,22 @@ const Contact = () => {
 
               <Form>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Your Name" type="text" />
+                  <Input placeholder="First Name" type="text" />
                 </FormGroup>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Email" type="email" />
+                  <Input placeholder="Last Name" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="E-mail" type="email" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Company Name" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Position" type="text" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Phone" type="tel" />
                 </FormGroup>
                 <FormGroup className="contact__form">
                   <textarea
@@ -54,8 +66,34 @@ const Contact = () => {
                     className="textarea"
                   ></textarea>
                 </FormGroup>
-
-                <button className=" contact__btn" type="submit">
+                <FormGroup className="contact__form">
+                  <Input type="file" />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input
+                    placeholder="How did you find out about us?"
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup className="contact__form">
+                  <Input placeholder="Your Name" type="text" />
+                </FormGroup>
+                <h5>Privacy Policy*</h5>
+                <FormGroup className="contact__form" check>
+                  <Input type="checkbox" />
+                  <Label check>
+                    I want to receive a copy of this message via e-mail.
+                  </Label>
+                </FormGroup>
+                <FormGroup className="contact__form" check>
+                  <Input type="checkbox" />
+                  <Label check>
+                    I have read the <span>Privacy Policy</span> note. I agree
+                    that my data will be collected and stored electronically to
+                    answer my request.
+                  </Label>
+                </FormGroup>
+                <button className=" contact__btn" type="submit" style={{marginTop: '20px'}}>
                   Send Message
                 </button>
               </Form>
