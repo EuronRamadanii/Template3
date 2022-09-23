@@ -9,6 +9,7 @@ import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 // import Industry from "../components/UI/IndustrySection";
+import Services from '../pages/Services'
 import AboutSection from "../components/UI/AboutSection";
 import Managment from "../components/UI/Managment";
 import Locations from "../components/UI/Locations";
@@ -29,6 +30,7 @@ const Routers = () => {
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/activities" element={<CompanyActivities />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/services" element={<Services />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
