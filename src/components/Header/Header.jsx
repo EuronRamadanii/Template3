@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
 import { useState } from "react";
+import english from "../../assets/all-images/united-kingdom.png";
+import deutsch from "../../assets/all-images/germany.png";
 
 const navLinks = [
   {
@@ -168,7 +170,7 @@ const Header = () => {
       {/* ========== main navigation =========== */}
 
       <div className="main__navbar">
-        <Container >
+        <Container>
           <div className="navigation__wrapper d-flex align-items-center justify-content-between">
             <span className="mobile__menu">
               <i class="ri-menu-line" onClick={toggleMenu}></i>
@@ -213,12 +215,20 @@ const Header = () => {
             </div>
 
             <div className="nav__right">
-              <div className="search__box">
+              <div className="search__box" style={{ marginLeft: "450px" }}>
                 <input type="text" placeholder="Search" />
                 <span>
                   <i className="ri-search-line"></i>
                 </span>
               </div>
+            </div>
+            <div>
+              <img
+                src={english}
+                style={{ height: "20px", marginRight: "10px" }}
+                alt=""
+              />
+              <img src={deutsch} style={{ height: "20px" }} alt="" />
             </div>
           </div>
         </Container>
