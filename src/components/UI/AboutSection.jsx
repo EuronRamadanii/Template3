@@ -15,7 +15,7 @@ const AboutSection = ({ aboutClass }) => {
         style={
           aboutClass === "aboutPage"
             ? { marginTop: "0px" }
-            : { marginTop: "280px" }
+            : { marginTop: "0px" }
         }
       >
         <Container>
@@ -64,7 +64,7 @@ const AboutSection = ({ aboutClass }) => {
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container style={{ marginTop: "50px" }}>
           <Row>
             <Col lg="6" md="6">
               <div className="about__img">
@@ -111,7 +111,7 @@ const AboutSection = ({ aboutClass }) => {
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container style={{ marginTop: "50px" }}>
           <Row>
             <Col lg="6" md="6">
               <div className="about__section-content">
@@ -202,7 +202,9 @@ const AboutSection = ({ aboutClass }) => {
           </Col>
         </Row>
       </Container>
-      <BecomeDriverSection />
+      {/* <Container> */}
+        <BecomeDriverSection />
+      {/* </Container> */}
     </>
   );
 };
