@@ -60,7 +60,7 @@ const Managment = ({ aboutClass }) => {
                 {/* <p className="section__description">Stefan Egerer</p> */}
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Studium: FH München
                     sit amet.
                   </p>
@@ -72,7 +72,7 @@ const Managment = ({ aboutClass }) => {
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Abschluss:
                     Dipl.-Ing.
                   </p>
@@ -83,18 +83,18 @@ const Managment = ({ aboutClass }) => {
                   </p> */}
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Wurzeln:
                     Entwicklungsdienstleistung
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Funktion: Vorstand
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Fachgebiete:
                     Technische Risikoanalysen (FMEA, FTA), Methodenberatung und
                     -entwicklung, Innovations- und Kreativitätsmethoden
@@ -115,7 +115,7 @@ const Managment = ({ aboutClass }) => {
                 {/* <p className="section__description">Stefan Egerer</p> */}
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Studium: Universität
                     Jena, TU München
                   </p>
@@ -127,7 +127,7 @@ const Managment = ({ aboutClass }) => {
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Abschluss:
                     Dipl.-Ing., Dipl.-Wirtsch.-Ing.
                   </p>
@@ -138,18 +138,18 @@ const Managment = ({ aboutClass }) => {
                   </p> */}
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Wurzeln:
                     Unternehmensberatung, Entwicklungsdienstleistung
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Funktion: Vorstand
                   </p>
                 </div>
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Fachgebiete:
                     Prozessmanagement
                   </p>

@@ -41,10 +41,25 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-    .section__description {
-        font-size: 20px !important;
+    .management-con2 .q {
+        font-size: 16px !important;
+    }
+    .management-con .q {
+        font-size: 16px !important;
     }
 }
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 992px) {
+
+    .client-con1 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .client-con2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .client-con3 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
