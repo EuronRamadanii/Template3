@@ -8,18 +8,16 @@ import Career from "../components/UI/Career";
 
 const Blog = () => {
   return (
-    <Helmet title="Blogs">
+    <Helmet title="Career">
       <div>
         <ScrollToTop />
       </div>
-      <CommonSection title="Blogs" />
+      <CommonSection title="Career" />
       <section>
         <Container>
       <Career aboutClass="aboutPage" />
 
           <Row>
-            <BlogList />
-            <BlogList />
           </Row>
         </Container>
       </section>

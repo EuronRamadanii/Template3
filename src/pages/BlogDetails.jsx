@@ -26,30 +26,130 @@ const BlogDetails = () => {
             <Col lg="8" md="8">
               <div className="blog__details">
                 <img src={blog.imgUrl} alt="" className="w-100" />
-                <h2 className="section__title mt-4">{blog.title}</h2>
+                <h2 className="section__title mt-4">{blog.author}</h2>
 
                 <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
-                  <span className="blog__author">
+                  {/* <span className="blog__author">
                     <i class="ri-user-line"></i> {blog.author}
-                  </span>
+                  </span> */}
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  {/* <span className=" d-flex align-items-center gap-1 section__description">
                     <i class="ri-calendar-line"></i> {blog.date}
-                  </span>
+                  </span> */}
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  {/* <span className=" d-flex align-items-center gap-1 section__description">
                     <i class="ri-time-line"></i> {blog.time}
-                  </span>
+                  </span> */}
+                </div>
+                <div style={{ width: "70%" }}>
+                  <h4>{blog.date1}</h4>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description1}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description2}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description3}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description4}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description5}
+                    </p>
+                  </div>
                 </div>
 
-                <p className="section__description">{blog.description}</p>
-                <h6 className="ps-5 fw-normal">
-                  <blockquote className="fs-4">{blog.quote}</blockquote>
+                <div style={{ width: "70%" }}>
+                  <h4>{blog.date2}</h4>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description11}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description22}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description33}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description44}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description55}
+                    </p>
+                  </div>
+                </div>
+                <div style={{ width: "70%" }}>
+                  <h4>{blog.date3}</h4>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description111}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description222}
+                    </p>
+                  </div>
+                  <div className="about__section-item d-flex align-items-center">
+                    <p className=" d-flex align-items-center gap-2">
+                      {" "}
+                      <i class="ri-checkbox-circle-line"> </i>
+                      {blog.description333}
+                    </p>
+                  </div>
+                </div>
+
+                <h6 className="fw-normal">
+                  <blockquote className=" fs-4">{blog.quote}</blockquote>
                 </h6>
                 <p className="section__description">{blog.description}</p>
               </div>
-
-              <div className="comment__list mt-5">
+              </Col>
+              {/* <div className="comment__list mt-5">
                 <h4 className="mb-5">3 Comments</h4>
 
                 <div className="single__comment d-flex gap-3">
@@ -69,7 +169,7 @@ const BlogDetails = () => {
                   </div>
                 </div>
 
-                {/* =============== comment form ============ */}
+                =============== comment form ============ 
                 <div className="leave__comment-form mt-5">
                   <h4>Leave a Comment</h4>
                   <p className="section__description">
@@ -95,10 +195,10 @@ const BlogDetails = () => {
                     </button>
                   </Form>
                 </div>
-              </div>
-            </Col>
+              </div> */}
+           
 
-            <Col lg="4" md="4">
+            {/* <Col lg="4" md="4">
               <div className="recent__post mb-4">
                 <h5 className=" fw-bold">Recent Posts</h5>
               </div>
@@ -112,7 +212,7 @@ const BlogDetails = () => {
                   </div>
                 </div>
               ))}
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </section>
