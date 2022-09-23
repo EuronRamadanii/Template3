@@ -1,98 +1,98 @@
 const serviceData = [
   {
     id: 1,
-    title: "Project planning & implementation",
+    title: "Projektierung & Umsetzung",
     icon: "ri-map-pin-2-line",
-    desc: "On request, CONTEXT absorbs the complete management regarding project set-up, project implementation and project completion analysis.",
+    desc: "CONTEXT übernimmt auf Wunsch die komplette Steuerung im Rahmen der Projektplanung, -durchführung und -abschlußanalyse.",
     desc2:
-      "Regardless of whether it is optimization tasks or solving acute quality problems.",
+      "Unabhängig davon, ob es sich um Optimierungsaufgaben handelt oder um die Lösung akuter Qualitätsprobleme.",
     subLinks: [
       {
-        title: "Case study production shift",
-        text: "A supplier to the manufacturing industry relocates its production site.",
+        title: "Beispiel Produktionsverlagerung",
+        text: "Ein Zulieferer der Fertigungsindustrie verlagert seinen Produktionsstandort.",
         subTexts: [
           {
-            title: "Initial situation",
+            title: "Ausgangssituation",
             paragraphs: [
-              "Potential loss of quality and threat of collapse in production volumes",
-              "Preventive measures at the source location and transfer location have to be taken",
+              "Potenzielle Qualitätsverluste und drohender Einbruch bei Produktionsvolumina",
+              "Vermeidungsmaßnahmen am Ursprungs- und Transferstandort sind zu treffen",
             ],
           },
           {
-            title: "Approach",
+            title: "Ansatz",
             paragraphs: [
-              "Determining the status quo via: check of the process FMEA and control plans, process capability studies and measurement system analyses, review of all production-related drawings and documents",
-              "Time and volume planning including inventory buildup for the time of transfer",
-              "Support in launching the transferred line at the new site",
-              "Approval of the serial processes",
-              "Conduction of performance tests",
-              "Control by new process capability studies and measurement system analyses",
+              "Status Quo-Bestimmung über: Kontrolle der Prozess-FMEA und Control Pläne, Prozess- und Messmittelfähigkeitsstudien, Prozess- und Messmittelfähigkeitsstudien",
+              "Zeit- und Volumenplanung inklusive Lagerbestandsaufbau für die Transferzeit",
+              "Begleitung der Inbetriebnahme der transferierten Linie am neuen Standort",
+              "Abnahme der Prozessserie",
+              "Durchführung Leistungstest",
+              "Kontrolle durch erneute Messmittel- und Prozessfähigkeitsstudien",
             ],
           },
           {
-            title: "Results",
+            title: "Ergebnisse",
             paragraphs: [
-              "Comparison with historical data from the old production site",
-              "Setting up and monitoring the launch management at the new site",
-              "Approval and Lessons Learned",
+              "Vergleich mit historischen Daten aus alter Produktionsstätte",
+              "Aufsetzen und Begleitung des Launchmanagements am neuen Standort",
+              "Linienfreigabe und Lessons Learned",
             ],
           },
         ],
       },
       {
-        title: "Case study increase of complaints",
-        text: "A car manufacturer identifies an increased volume of customer complaints.",
+        title: "Beispiel Reklamationsanstieg",
+        text: "Ein Automobilhersteller verzeichnet ein erhöhtes Aufkommen an Kundenbeschwerden.",
         subTexts: [
           {
-            title: "Initial situation",
+            title: "Ausgangssituation",
             paragraphs: [
-              "Increasing number of complaints due to engine start problems",
-              "Increased warranty costs for a particular vehicle model",
-              "Error patterns suggest correlations with the exhaust system",
+              "Steigende Anzahl von Reklamationen aufgrund von Motorstartproblemen",
+              "Erhöhte Gewährleistungskosten bei einem bestimmten Fahrzeugmodell",
+              "Fehlerbilder deuten auf einen Zusammenhang mit dem Abgassystem hin",
             ],
           },
           {
-            title: "Approach",
+            title: "Ansatz",
             paragraphs: [
-              "Demarcating the problem area to be considered by evaluation of field data",
-              "Identifying an illegal drift of the lambda probe values 1 as root cause using the root cause analysis and suitable DoE",
-              "1  Lambda probe: Sensor for detection and control of the air content in the exhaust",
+              "Abgrenzung  des zu betrachtenden Problemfeldes über Auswertung von Felddaten",
+              "Identifikation einer unzulässigen Drift der Lambdasondenwerte 1 als Kernursache mittels Root Cause-Analyse und geeigneter Versuchsmethodik",
+              "1 Lambdasonde: Sensor zur Messung und Steuerung des Luftgehaltes im Abgas",
             ],
           },
           {
-            title: "Results",
+            title: "Ergebnisse",
             paragraphs: [
-              "Compensation of the drift behaviour by appropriate engine remapping in the ECU’s lambda control as a consequence of the results of the design",
+              "Kompensation des Driftverhaltens über eine entsprechende Kennfeldanpassung in der Lambdaregelung des Motorsteuergerätes als Folge aus den Ergebnissen des Versuchsplans",
             ],
           },
         ],
       },
       {
-        title: "Case study AQP",
-        text: "A system supplier in the field of electric drives ensures the required quality standards within the scope of a development project.",
+        title: "Beispiel QVP",
+        text: "Ein Systemlieferant im Umfeld von Elektroantrieben stellt die vorgegebenen Qualitätsstandards innerhalb eines Entwicklungsprojektes sicher.",
         subTexts: [
           {
-            title: "Initial situation",
+            title: "Ausgangssituation",
             paragraphs: [
-              "Search for a support service within the scope of a development project with a high level of innovation",
-              "Demand for: advanced quality planning (AQP), internal coordination and implementation of methods for the detection and evaluation of development risks, and external to the participating development partners/suppliers",
+              "Suche einer Unterstützungsleistung im Rahmen eines Entwicklungsprojektes mit hohem Innovationsgrad",
+              "Forderung nach einer: erweiterten Qualitätsvorausplanung (QVP), internen Methodenkoordination und -umsetzung zur Erkennung und Bewertung von Entwicklungsrisiken und extern gegenüber den beteiligten Entwicklungspartnern/Lieferanten",
             ],
           },
           {
-            title: "Approach",
+            title: "Ansatz",
             paragraphs: [
-              "Project planning as part of a service contract",
-              "Staffing the required role with an experienced quality manager",
-              "Analyzing of the project status",
-              "Identifying and evaluating the prior project risks of the development components using a risk filter  ",
+              "Projektierung im Zuge eines Werkvertrages",
+              "Besetzung der geforderten Rolle mit einem erfahrenen Qualitätsmanager",
+              "Analyse des Projektstandes",
+              "Ermittlung und Bewertung der prioren Projektrisiken für die Entwicklungskomponenten mittels Risikofilter",
             ],
           },
           {
-            title: "Results",
+            title: "Ergebnisse",
             paragraphs: [
-              "Creation of an adjusted AQP and coordination with the project plan",
-              "Process trainings for the development partners",
-              "Coordination, implementation and monitoring of the methods (e.g. FMEA, test planning, software analysis)",
+              "Erstellung einer angepassten QVP und Abstimmung mit dem Projektplan",
+              "Prozessschulungen der Entwicklungspartner",
+              "Koordination, Durchführung und Überwachung der Methoden (z.B. FMEA, Testplanung, Softwareanalyse)",
             ],
           },
         ],
@@ -102,69 +102,69 @@ const serviceData = [
 
   {
     id: 2,
-    title: "Consulting",
+    title: "Beratung",
     icon: "ri-community-line",
-    desc: "The focus here is on the ambition that our solutions are both, practical and efficient, while fitting to our customers' processes.",
+    desc: "Im Vordergrund steht auch hier der Anspruch, dass unsere Lösungen sowohl praktikabel als auch effizient sind und zu den Arbeitsabläufen unserer Kunden passen.",
     desc2:
-      "As needed, CONTEXT provides concrete recommendations for action, preceded by pinpoint analyses and leading to tangible results. For instance, when it comes to selecting and using appropriate methods and tools.",
+      "CONTEXT liefert bei Bedarf konkrete Handlungsempfehlungen, denen punktgenaue Analysen vorausgehen und die zu spürbaren Ergebnissen führen. Etwa wenn es um die Auswahl und den Einsatz geeigneter Methoden und Werkzeuge geht.",
     subLinks: [
       {
-        title: "Case study DoE",
-        text: "For engines to be developed, the significant influencing factors of selected target parameters need to be identified and optimized.",
+        title: "Projektbeispiel DoE",
+        text: "Für zu entwickelnde Motoren sollen die signifikanten Einflussfaktoren ausgewählter Zielgrößen identifiziert und optimal eingestellt werden.",
         subTexts: [
           {
-            title: "Initial situation",
+            title: "Ausgangssituation",
             paragraphs: [
-              "Adapting an engine to the increased demands of the European standard Euro 5 in order to meet emission limits  ",
+              "Anpassung eines Motors an die gestiegenen Anforderungen der Euro-5-Norm im Hinblick auf die Einhaltung von Abgasgrenzwerten",
             ],
           },
           {
-            title: "Approach",
+            title: "Ansatz",
             paragraphs: [
-              "Determining the parameters with siginificant impact on consumption, smoothness and CO/HC/NOx emissions",
-              "Setting the identified drivers with the aim of minimizing the specific consumption and the CO/HC/NOx emissions and maximizing the smoothness",
+              "Ermittlung der Größen mit signifikantem Einfluss auf Verbrauch, Laufruhe und CO/HC/NOx-Emissionen",
+              "Einstellung der zu identifizierenden Treiber mit dem Ziel einer Minimierung des spezifischen Verbrauchs und der CO/HC/NOx-Emissionen und Maximierung der Laufruhe",
             ],
           },
           {
-            title: "Results",
+            title: "Ergebnisse",
             paragraphs: [
-              "System analysis highlights 9 setting parameters with influence on the resulting target parameters",
-              "Reduction of the temporal experimental effort by a factor of 300",
-              "Identification of the significant influencing factors",
-              "Derivation of optimal parameter values considering existing trade-offs",
+              "Systemanalyse bringt 9 Einstellgrößen mit Einfluss auf die resultierenden Zielgrößen hervor",
+              "Reduktion des zeitlichen Versuchsaufwandes um den Faktor 300",
+              "Ermittlung der signifikanten Einflussfaktoren",
+              "Ableitung optimaler Parameterwerte unter Berücksichtigung vorhandener Zielkonflikte",
             ],
           },
         ],
       },
       {
-        title: "Case study NRA",
-        text: "The system inherent risks for hybrid drives need to be analyzed. The complexity of these systems with all the interactions between their (software) modules lets conventional risk analyses reach their limits and makes an own approach, such as our developed network risk analysis (NRA), necessary.",
+        title: "Projektbeispiel NRA",
+        text: "Für Hybrid-Antriebe sollen die systemeigenen Risiken analysiert werden. Die Komplexität dieser Systeme mit all den Wechselwirkungen zwischen ihren (Software-)Modulen lässt konventionelle Risikoanalysen an ihre Grenzen geraten und macht einen eigenen Ansatz wie die von uns entwickelte Netzwerk-Risikoanalyse (NRA) notwendig.",
         subTexts: [
           {
-            title: "Initial situation",
+            title: "Ausgangssituation",
             paragraphs: [
-              "Many control units interact with the drive of hybrid vehicles",
-              "Combustion engine, electric motor and transmission have to work together flawlessly and customer-optimized – possibly even with further control units",
+              "Viele Steuergeräte interagieren beim Antrieb von Hybrid-Fahrzeugen",
+              "Verbrennungsmotor, Elektromotor und Getriebe müssen fehlerfrei und kundenoptimal zusammenarbeiten – ggf. mit noch weiteren Steuergeräten",
             ],
           },
           {
-            title: "Approach",
+            title: "Ansatz",
             paragraphs: [
-              "Analyzing the system environment (control unit software)",
-              "Evaluating the system elements (software modules)",
-              "Analyzing the connections between the modules",
-              "Calculating the modules' own risks",
-              "Calculating the linkage risks for the complete control unit",
-              "Analyzing the results",
-              "Interpreting and presenting the results",
+              "Analyse der Systemlandschaft (Software im Steuergerät)",
+              "Bewertung der Systemelemente (Softwaremodule)",
+              "Analyse der Verknüpfung der Module untereinander",
+              "Berechnung der Eigenrisiken der Module",
+              "Berechnung der Verkettungsrisiken für das gesamte Steuergerät",
+              "Analyse der Ergebnisse",
+              "Interpretation und Darstellung der Ergebnisse",
             ],
           },
           {
-            title: "Results",
+            title: "Ergebnisse",
             paragraphs: [
-              "Presentation of the modules which bear the highest risks",
-              "Presentation of the modules which inherit the highest risks from other modules",
-              "Identification of improvement potentials: Which improvement of a module provides most benefit to the overall system?",
+              "Darstellung, welche Module die höchsten Risiken in sich tragen",
+              "Darstellung, welche Module die größten Risiken von anderen Modulen erben",
+              "Aufzeigen von Verbesserungspotenzialen: Welche Verbesserung eines Moduls bringt dem Gesamtsystem am meisten?",
             ],
           },
         ],
@@ -174,65 +174,65 @@ const serviceData = [
 
   {
     id: 3,
-    title: "Trainings",
+    title: "Schulungen",
     icon: "ri-roadster-line",
-    desc: "The CONTEXT Academy offers both, company-specific trainings and public seminars open to anyone.",
+    desc: "Die CONTEXT-Akademie bietet sowohl unternehmensspezifische Schulungen als auch allen Interessierten zugängliche Seminare.",
     desc2:
-      "The practical relevance is always in the foreground. The direct implementation in realistic scenarios enables the participants to apply their newly acquired skills immediately.",
+      "The practical relevance is always in the foreground. The direct implementation in realistic scenarios enables the participants to apply their newly acquired skills immediately.Immer steht der Praxisbezug im Vordergrund. Die direkte Umsetzung in realitätsnahen Beispielen befähigt die Teilnehmer, das Gelernte sofort anwenden zu können.",
     subLinks: [
       {
-        title: "Company trainings",
-        text: "In addition to the main topics of our training programme we offer individually tailored trainings to meet your needs. The content can be designed in consideration of the field of application, the business constellation and industry. On request we will provide additional support in the form of mentoring the transfer and implementation of the new knowledge into your daily business.",
+        title: "Firmenschulungen",
+        text: "Neben den Schwerpunktthemen aus unserem Schulungsprogramm bieten wir Ihnen auch gerne individuell auf Ihren Bedarf angepasste Schulungen an. Die Inhalte können hierbei unter Berücksichtigung von Einsatzgebiet, Unternehmenskonstellation und Branchenbezug gestaltet werden. Auf Wunsch unterstützen wir Sie zusätzlich in Form von Mentoring bei der Umsetzung und Implementierung der neuen Kenntnisse in Ihr Tagesgeschäft.",
         subTexts: [
           {
             title: "In-house",
             paragraphs: [
-              "Trainings at your site save travel costs for your employees. Furthermore, the usual corporate IT environment gives the participants a feeling of security.",
+              "Mit Schulungen bei Ihnen vor Ort sparen Sie Reisekosten für Ihre Mitarbeiter. Zudem gibt die gewohnte firmeneigene IT-Umgebung den Teilnehmern Sicherheit.",
             ],
           },
           {
             title: "Off-site",
             paragraphs: [
-              "In our own modern seminar rooms you are able to concentrate on your chosen topic, far from the distracting daily business.",
-              "We assure our personal care in a comfortable learning environment.",
+              "In unseren eigenen, modern ausgestatteten Seminarräumen können Sie sich fernab des ablenkenden Tagesgeschäftes ganz auf Ihr gewähltes Schulungsthema konzentrieren.",
+              "Wir sichern Ihnen hierbei unsere persönliche Betreuung in einem angenehmen Lernumfeld zu.",
             ],
           },
         ],
       },
       {
-        title: "Open trainings",
-        text: "Our open trainings address a wide range of participants and thus are bookable for anyone interested.",
+        title: "Offene Schulungen",
+        text: "Unsere offenen Schulungen richten sich an einen breiten Teilnehmerkreis und sind damit für jeden Interessierten buchbar.",
         subTexts: [
           {
-            title: "Topics and dates",
+            title: "Themen und Termine",
             paragraphs: [
-              "Our open trainings are held regularly. For details please refer to our training programme.",
+              "Unsere offenen Schulungen finden regelmäßig statt. Details entnehmen Sie bitte unserem Schulungsprogramm.",
             ],
           },
           {
-            title: "Venue",
+            title: "Veranstaltungsort",
             paragraphs: [
-              "In our own modern seminar rooms in the north of Munich experienced tutors impart to you methodological knowledge and special skills on selected topics.",
-              "We assure our personal care in small, manageable groups and in a comfortable learning environment.",
+              "In unseren eigenen, modern ausgestatteten Seminarräumen im Norden von München vermitteln Ihnen erfahrene Dozenten Methoden- und Spezialwissen zu ausgewählten Themen.",
+              "Wir sichern Ihnen hierbei unsere persönliche Betreuung in kleinen, überschaubaren Gruppen und ein angenehmes Lernumfeld zu.",
             ],
           },
         ],
       },
       {
-        title: "Conference room rental",
-        text: "You are welcome to hire our meeting rooms for your conferences and business meetings, too.",
+        title: "Konferenzraumvermietung",
+        text: "Gerne können Sie unsere Tagungsräume in München auch für Ihre Konferenzen und Arbeitsbesprechungen anmieten.",
         subTexts: [
           {
-            title: "Range of rooms",
+            title: "Raumangebot",
             paragraphs: [
-              "We have seven seminar rooms – each with 25 to 50 m² and daylight. By simply combining our two largest rooms, usually separated by a sliding wall, a seated area for about 30 to 70 people can be realized.",
+              "Wir verfügen über sieben Seminarräume mit jeweils 25 bis 50 m2 und Tageslicht. Allein durch die Zusammenlegung unserer beiden größten und mit einer Schiebewand verbundenen Räume lässt sich bestuhlter Platz für etwa 30 bis 70 Personen realisieren.",
             ],
           },
           {
-            title: "Additional services",
+            title: "Zusatzleistungen",
             paragraphs: [
-              "Optionally, apart from hospitality with hot and cold drinks and biscuits, we offer moderation support, catering and technical equipment.",
-              "For inquiries and rates please use the contact form.",
+              "Optional bieten wir Ihnen neben der Bewirtung mit Heiß-/Kaltgetränken und Konferenzgebäck auch Moderatorenunterstützung, Catering und technisches Equipment an.",
+              "Für Anfragen und Preisinformationen nutzen Sie bitte das Kontaktformular.",
             ],
           },
         ],
