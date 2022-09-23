@@ -161,7 +161,9 @@ const AboutSection = ({ aboutClass }) => {
           </Row>
         </Container>
       </section>
-      <Container>
+      {/* <Container> */}
+      <BecomeDriverSection />
+      <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
         <Row>
           <Col lg="6" md="6" sm="12">
             <div className="about__page-img">
@@ -202,8 +204,6 @@ const AboutSection = ({ aboutClass }) => {
           </Col>
         </Row>
       </Container>
-      {/* <Container> */}
-        <BecomeDriverSection />
       {/* </Container> */}
     </>
   );
