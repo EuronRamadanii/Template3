@@ -232,16 +232,107 @@ const Managment = ({ aboutClass }) => {
                 perferendis repellendus nostrum delectus. Nemo et dolore est
                 tempore rem minima adipisci magni dolorum ipsam.
               </p>
+            </div>
+          </div>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <iframe
+            style={{ width: "50%", height: "300px" }}
+            src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
 
-              <div className=" d-flex align-items-center gap-3 mt-4">
-                <span className="fs-4">
-                  <i class="ri-phone-line"></i>
-                </span>
+          <iframe
+            style={{ width: "50%", height: "300px" }}
+            src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
 
-                <div>
-                  <h6 className="section__subtitle">Need Any Help?</h6>
-                  <h4>+00123456789</h4>
-                </div>
+          <div style={{ marginTop: "20px" }}>
+            <iframe
+              style={{ width: "100%", height: "300px" }}
+              src="https://maps.google.com/maps?q=Lessingstra%C3%9Fe%2072,%2038440,%20Wolfsburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </Row>
+      </Container>
+      <Container style={{ marginBottom: "50px" }}>
+        <h3>Firmenaktivitäten</h3>
+        <p>
+          In dieser Sektion finden Sie unser News-Archiv, das wir zur besseren
+          Übersicht nach Themenblöcken und chronologisch geordnet haben.
+        </p>
+        <Row>
+          <div className="boxes2">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "30px",
+              }}
+            >
+              <div className="box2">
+                <h3>Organisation</h3>
+                <ul style={{ listStyleType: "circle" }}>
+                  <li>
+                    07/2017: CONTEXT begeht sein 20-jähriges Firmenjubiläum
+                  </li>
+                  <li>
+                    03/2014: CONTEXT automotive GmbH nimmt Betrieb in Wolfsburg
+                    auf
+                  </li>
+                  <li>
+                    07/2012: CONTEXT begeht sein 15-jähriges Firmenjubiläum
+                  </li>
+                  <li>
+                    01/2012: CONTEXT wächst weiter und eröffnet Niederlassung in
+                    der Steiermark
+                  </li>
+                </ul>
+              </div>
+              <div className="box2">
+                <h3>Engagement</h3>
+                <ul style={{ listStyleType: "circle" }}>
+                  <li>
+                    CONTEXT macht PC-Kurse mit Kindern vom{" "}
+                    <b>
+                      {" "}
+                      <a href="http://lichtblick-hasenbergl.org/">
+                        {" "}
+                        Lichtblick Hasenbergl
+                      </a>
+                    </b>
+                  </li>
+                  <li>
+                    CONTEXT ist Fördermitglied der{" "}
+                    <b>
+                      {" "}
+                      <a href="http://kinder-unfallhilfe-online.de/foerdermitglieder/">
+                        {" "}
+                        Aktion Kinder-Unfallhilfe e.V.
+                      </a>
+                    </b>
+                  </li>
+                  <li>
+                    CONTEXT-Vorstand ist Kurator der Studierendeninitiative{" "}
+                    <b>
+                      {" "}
+                      <a href="https://www.teg-ev.de/ueber-uns"> TEG e.V.</a>
+                    </b>
+                  </li>
+                </ul>
               </div>
             </div> */}
           {/* </Col> */}
