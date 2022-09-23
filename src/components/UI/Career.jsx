@@ -16,8 +16,18 @@ const Career = ({ aboutClass }) => {
     >
       <Container>
         <Row>
-        <h4 className="section__subtitle">About Us</h4>
-              <h2 className="section__title">Karriere</h2>
+        
+         
+
+          <h2 className="section__title">Jobs </h2>
+              <p className="section__description_career">
+              Wir freuen uns, dass Sie sich für eine Mitarbeit in unserem Team interessieren
+              </p>
+                  <h4 className="section__subtitle" style={{color:"black"}}>Open Jobs</h4>
+
+          <BlogList/>
+          {/* <h4 className="section__subtitle mt-5" style={{color:"#000d6b"}}>Why Context</h4> */}
+              <h2 className="section__title mt-5">Why Context</h2>
               <p className="section__description_career">
                 Unsere wichtigste Ressource und Kapital sind unsere Mitarbeiter.
                 Sie sind der entscheidende Faktor für unseren Erfolg. Um
@@ -26,7 +36,7 @@ const Career = ({ aboutClass }) => {
                 Qualitätsmanagement und einer ausgeprägten
                 Dienstleistungsmentalität.
               </p>
-          <Col lg="12" md="6">
+           <Col lg="12" md="6">
             <div className="about__section-content">
               <div
                 style={{
@@ -183,16 +193,7 @@ const Career = ({ aboutClass }) => {
               
 
             </div>
-          </Col>
-
-          <h2 className="section__title">Jobs </h2>
-              <p className="section__description_career">
-              Wir freuen uns, dass Sie sich für eine Mitarbeit in unserem Team interessieren
-              </p>
-                  <h4 className="section__subtitle" style={{color:"black"}}>Open Jobs</h4>
-
-          <BlogList />
-            
+          </Col>            
         </Row>
       </Container>
     </section>
