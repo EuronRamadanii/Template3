@@ -29,10 +29,6 @@ const navLinks = [
     display: "Blog",
   },
   {
-    path: "/services",
-    display: "Services",
-  },
-  {
     path: "/contact",
     display: "Contact",
   },
@@ -46,6 +42,7 @@ const navLinks = [
 const Header = () => {
   const menuRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
+  const [isHovering2, setIsHovering2] = useState(false);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
@@ -55,6 +52,12 @@ const Header = () => {
   const leaveDropdown = () => {
     setIsHovering(false);
   };
+  const enterDropdown2 = () => {
+    setIsHovering2(true);
+  };
+  const leaveDropdown2 = () => {
+    setIsHovering2(false);
+  };
   const navigate = useNavigate();
 
   const goToClient = () => {
@@ -63,11 +66,14 @@ const Header = () => {
   const goToManagment = () => {
     navigate("/managment");
   };
-  const goToLocations = () => {
-    navigate("/locations");
+  const goToProjektierung = () => {
+    navigate("/services/project");
   };
-  const goToActivities = () => {
-    navigate("/activities");
+  const goToBeratung = () => {
+    navigate("/services/beratung");
+  };
+  const goToSchulungen = () => {
+    navigate("/services/schulungen");
   };
 
   return (
@@ -189,6 +195,28 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
+                <Dropdown
+                  className="hover-dropdown"
+                  show={isHovering2}
+                  onMouseOver={enterDropdown2}
+                  onMouseLeave={leaveDropdown2}
+                >
+                  <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                    Leistungen
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu show={isHovering2}>
+                    <Dropdown.Item onClick={goToProjektierung}>
+                      Projektierung & Umsetzung
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={goToBeratung}>
+                      Beratung
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={goToSchulungen}>
+                      Schulungen
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+
                 <Dropdown
                   className="hover-dropdown"
                   show={isHovering}
