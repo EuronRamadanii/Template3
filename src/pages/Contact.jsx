@@ -93,7 +93,11 @@ const Contact = () => {
                     answer my request.
                   </Label>
                 </FormGroup>
-                <button className=" contact__btn" type="submit" style={{marginTop: '20px'}}>
+                <button
+                  className=" contact__btn"
+                  type="submit"
+                  style={{ marginTop: "20px" }}
+                >
                   Send Message
                 </button>
               </Form>
@@ -128,18 +132,17 @@ const Contact = () => {
                     </Link>
                   ))}
                 </div>
+                <Container>
+                  <Row style={{ width: "100%" }}>
+                    <img src={Context} alt="" />
+                  </Row>
+                </Container>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-      <section>
-        <Container>
-          <Row>
-            <img src={Context} alt="" />
-          </Row>
-        </Container>
-      </section>
+      <section></section>
     </Helmet>
   );
 };
