@@ -163,7 +163,7 @@ const Header = () => {
       {/* ========== main navigation =========== */}
 
       <div className="main__navbar">
-        <Container>
+        <Container >
           <div className="navigation__wrapper d-flex align-items-center justify-content-between">
             <span className="mobile__menu">
               <i class="ri-menu-line" onClick={toggleMenu}></i>
@@ -189,19 +189,19 @@ const Header = () => {
                   onMouseLeave={leaveDropdown}
                 >
                   <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                    Dropdown Button
+                    Company
                   </Dropdown.Toggle>
                   <Dropdown.Menu show={isHovering}>
                     <Dropdown.Item onClick={goToClient}>Client</Dropdown.Item>
                     <Dropdown.Item onClick={goToManagment}>
                       Managment
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={goToLocations}>
+                    {/* <Dropdown.Item onClick={goToLocations}>
                       Locations
                     </Dropdown.Item>
                     <Dropdown.Item onClick={goToActivities}>
                       Company Activities
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
