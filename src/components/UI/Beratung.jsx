@@ -35,9 +35,9 @@ const ServiceItem = ({ item }) => (
               {sub.subTexts.map((t) => (
                 <div style={{ marginLeft: "40px" }} className="subofsub-item">
                   <h5> {t.title}</h5>
-                  <ul>
+                  <ul style={{ listStyleType: "circle" }}>
                     {t.paragraphs.map((p) => (
-                      <p>{p}</p>
+                      <li>{p}</li>
                     ))}
                   </ul>
                 </div>

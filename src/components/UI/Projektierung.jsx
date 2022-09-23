@@ -3,7 +3,7 @@ import { Col, Container, Row } from "reactstrap";
 import service1 from "../../assets/data/service1";
 import "../../styles/services-list.css";
 import service12 from "../../assets/all-images/service_1.2671af4c.png";
-import servicePhoto from '../../assets/all-images/services.jpg'
+import servicePhoto from "../../assets/all-images/services.jpg";
 
 const Projektierung = ({ item }) => {
   return (
@@ -32,8 +32,8 @@ const ServiceItem = ({ item }) => (
                 <h1 style={{ textAlign: "center" }}>{item.title}</h1>
               </span>
 
-              <h5>{item.desc}</h5>
-              <h5>{item.desc2}</h5>
+              <p className="section__description">{item.desc}</p>
+              <p className="section__description">{item.desc2}</p>
               {item.subLinks.map((sub) => (
                 <div style={{ marginLeft: "40px" }} className="sub-item">
                   <h4>{sub.title}</h4>
@@ -58,7 +58,13 @@ const ServiceItem = ({ item }) => (
           <Col>
             <img
               src={servicePhoto}
-              style={{ height: "500px", width: "500px", marginLeft: "100px", position: 'fixed', zIndex: '-1' }}
+              style={{
+                height: "500px",
+                width: "500px",
+                marginLeft: "100px",
+                position: "fixed",
+                zIndex: "-1",
+              }}
               alt=""
             />
           </Col>
