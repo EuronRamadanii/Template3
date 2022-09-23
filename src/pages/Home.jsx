@@ -5,7 +5,7 @@ import Helmet from "../components/Helmet/Helmet";
 
 import { Container, Row, Col } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
-import AboutSection from "../components/UI/AboutSection";
+// import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
 // import carData from "../assets/data/carData";
 // import CarItem from "../components/UI/TeamItem";
@@ -17,6 +17,7 @@ import "aos/dist/aos.css";
 import BlogList from "../components/UI/BlogList";
 import OurMembers from "../components/UI/OurMembers";
 import { ScrollToTop } from "../components/UI/ScrollToTop";
+// import About from "./About";
 
 const Home = () => {
   AOS.init({
@@ -52,7 +53,8 @@ const Home = () => {
         </div>
       </section>
       {/* =========== about section ================ */}
-      <AboutSection />
+      {/* <AboutSection /> */}
+      {/* <About /> */}
       {/* ========== services section ============ */}
       <section data-aos="zoom-in" data-aos-duration="1700">
         <Container>
@@ -135,8 +137,8 @@ const Home = () => {
               lg="12"
               className="mb-5 text-center"
             >
-              <h6 className="section__subtitle">Explore our blogs</h6>
-              <h2 className="section__title">Latest Blogs</h2>
+              <h2 className="section__title">Jobs</h2>
+              <h6 className="section__subtitle">Open Positions</h6>
             </Col>
 
             <BlogList />

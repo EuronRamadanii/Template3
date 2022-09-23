@@ -18,3 +18,28 @@
     font-size: 1.1rem;
   }
 }
+
+@media only screen and (max-width: 499px) {
+ .service__item {
+  padding: 0 20px;
+ }
+ ul {
+  padding: 0;
+ }
+ .sub-item {
+  margin-left: 20px !important;
+ }
+ .subofsub-item {
+  margin-left: 20px !important;
+ }
+}
+@media only screen and (max-width: 1200px) {
+  .fixed-photo img {
+    margin-left: 20px !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fixed-photo {
+    display: none;
+  }
+}

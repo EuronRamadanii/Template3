@@ -15,16 +15,16 @@ const AboutSection = ({ aboutClass }) => {
         style={
           aboutClass === "aboutPage"
             ? { marginTop: "0px" }
-            : { marginTop: "280px" }
+            : { marginTop: "0px" }
         }
       >
         <Container>
-          <Row>
-            <Col lg="6" md="6">
+          <Row className="client-con1">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">Clients</h2>
-                <p className="section__description">
+                <p className="section__description q">
                   226 / 5,000 Translation results Our customers are technology
                   and process-oriented companies that develop and manufacture
                   complex products. The majority of these are function-critical
@@ -32,24 +32,24 @@ const AboutSection = ({ aboutClass }) => {
                 </p>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
 
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
 
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
@@ -57,22 +57,22 @@ const AboutSection = ({ aboutClass }) => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__img">
                 {/* <img src={aboutImg} alt="" className="w-100" /> */}
               </div>
             </Col>
           </Row>
         </Container>
-        <Container>
-          <Row>
-            <Col lg="6" md="6">
+        <Container style={{ marginTop: "50px" }}>
+          <Row className="client-con2">
+            <Col lg="6" md="9">
               <div className="about__img">
                 {/* <img src={aboutImg} alt="" className="w-100" /> */}
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">The industry</h2>
@@ -85,24 +85,24 @@ const AboutSection = ({ aboutClass }) => {
                 </p>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
 
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
 
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
@@ -111,9 +111,9 @@ const AboutSection = ({ aboutClass }) => {
             </Col>
           </Row>
         </Container>
-        <Container>
-          <Row>
-            <Col lg="6" md="6">
+        <Container style={{ marginTop: "50px" }}>
+          <Row className="client-con3">
+            <Col lg="6" md="9">
               <div className="about__section-content">
                 {/* <h4 className="section__subtitle">Clients</h4> */}
                 <h2 className="section__title">Credentials</h2>
@@ -128,24 +128,24 @@ const AboutSection = ({ aboutClass }) => {
                 </p>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
 
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
                 </div>
 
                 <div className="about__section-item d-flex align-items-center">
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
 
-                  <p className="section__description d-flex align-items-center gap-2">
+                  <p className="section__description d-flex align-items-center gap-2 q">
                     <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor
                     sit amet.
                   </p>
@@ -153,7 +153,7 @@ const AboutSection = ({ aboutClass }) => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="9">
               <div className="about__img">
                 {/* <img src={aboutImg} alt="" className="w-100" /> */}
               </div>
@@ -161,14 +161,16 @@ const AboutSection = ({ aboutClass }) => {
           </Row>
         </Container>
       </section>
-      <Container>
+      {/* <Container> */}
+      <BecomeDriverSection />
+      <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
         <Row>
-          <Col lg="6" md="6" sm="12">
+          <Col lg="6" md="9" sm="12">
             <div className="about__page-img">
               <img src={driveImg} alt="" className="w-100 rounded-3" />
             </div>
           </Col>
-          <Col lg="6" md="6" sm="12">
+          <Col lg="6" md="9" sm="12">
             <div className="about__page-content">
               <h2 className="section__title">
                 We Are Committed To Provide Safe Ride Solutions
@@ -202,7 +204,7 @@ const AboutSection = ({ aboutClass }) => {
           </Col>
         </Row>
       </Container>
-      <BecomeDriverSection />
+      {/* </Container> */}
     </>
   );
 };

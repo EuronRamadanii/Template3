@@ -90,5 +90,13 @@
     font-size: 0.7rem;
   }
 
-  
+  .footer__logo {
+    margin-top: 65px !important;
+    margin-bottom: 0 !important;
+  }
+  .foterlogo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
