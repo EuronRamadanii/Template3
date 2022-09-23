@@ -34,19 +34,24 @@ const ServiceItem = ({ item }) => (
 
               <p className="section__description">{item.desc}</p>
               <p className="section__description">{item.desc2}</p>
-              {item.subLinks.map((sub) => (
-                <div style={{ marginLeft: "40px" }} className="sub-item">
+              {item.subLinks.map((sub, index) => (
+                <div
+                  key={index}
+                  style={{ marginLeft: "40px" }}
+                  className="sub-item"
+                >
                   <h4>{sub.title}</h4>
                   <p>{sub.text}</p>
-                  {sub.subTexts.map((t) => (
+                  {sub.subTexts.map((t, index) => (
                     <div
+                      key={index}
                       style={{ marginLeft: "40px" }}
                       className="subofsub-item"
                     >
                       <h5> {t.title}</h5>
                       <ul style={{ listStyleType: "circle" }}>
-                        {t.paragraphs.map((p) => (
-                          <li>{p}</li>
+                        {t.paragraphs.map((p, index) => (
+                          <li key={index}>{p}</li>
                         ))}
                       </ul>
                     </div>

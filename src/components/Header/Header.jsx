@@ -201,7 +201,14 @@ const Header = () => {
                   onMouseOver={enterDropdown2}
                   onMouseLeave={leaveDropdown2}
                 >
-                  <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                  <Dropdown.Toggle
+                    variant="secondary"
+                    id="dropdown-basic"
+                    style={{ color: "#6b6600" }}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    }
+                  >
                     Leistungen
                   </Dropdown.Toggle>
                   <Dropdown.Menu show={isHovering2}>
@@ -223,7 +230,14 @@ const Header = () => {
                   onMouseOver={enterDropdown}
                   onMouseLeave={leaveDropdown}
                 >
-                  <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                  <Dropdown.Toggle
+                    variant="secondary"
+                    id="dropdown-basic"
+                    style={{ color: "#6b6600" }}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    }
+                  >
                     Company
                   </Dropdown.Toggle>
                   <Dropdown.Menu show={isHovering}>
