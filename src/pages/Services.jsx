@@ -17,7 +17,7 @@ const Services = () => {
 };
 
 const ServiceItem = ({ item }) => (
-  <Col lg="6" md="4" sm="6" className="mb-3">
+  <Col lg="6" md="10" sm="10" className="mb-3">
     <div className="service__item">
       <span
         className="mb-3 d-flex"
@@ -30,11 +30,11 @@ const ServiceItem = ({ item }) => (
       <p className="section__description">{item.desc}</p>
       <p className="section__description">{item.desc2}</p>
       {item.subLinks.map((sub) => (
-        <div style={{ marginLeft: "40px" }}>
+        <div style={{ marginLeft: "40px" }} className="sub-item">
           <h4>{sub.title}</h4>
           <p>{sub.text}</p>
           {sub.subTexts.map((t) => (
-            <div style={{ marginLeft: "40px" }}>
+            <div style={{ marginLeft: "40px" }} className="subofsub-item">
               <h5> {t.title}</h5>
               <ul>
                 {t.paragraphs.map((p) => (
