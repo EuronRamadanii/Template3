@@ -18,8 +18,11 @@ const BlogItem = ({ item }) => {
   const { imgUrl, title, author, date, description, time } = item;
 
   return (
-    <Col lg="4" md="6" sm="6" className="mb-5">
-      <div className="blog__item">
+    <div>
+    
+      
+      
+      {/* <div className="blog__item">
         <img src={imgUrl} alt="" className="w-100" />
         <div className="blog__info p-3">
           <Link to={`/blogs/${title}`} className="blog__title">
@@ -31,11 +34,9 @@ const BlogItem = ({ item }) => {
               : description}
           </p>
 
-          <Link to={`/blogs/${title}`} className="read__more">
-            Read More
-          </Link>
+        
 
-          <div className="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
+           <div className="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
             <span className="blog__author">
               <i class="ri-user-line"></i> {author}
             </span>
@@ -51,8 +52,13 @@ const BlogItem = ({ item }) => {
             </div>
           </div>
         </div>
-      </div>
-    </Col>
+      </div> */}
+      <Link to={`/blogs/${title}`} className="read__more">
+          {author}
+      </Link>
+      
+
+    </div>
   );
 };
 

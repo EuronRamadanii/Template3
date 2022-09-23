@@ -137,8 +137,8 @@ const Home = () => {
               lg="12"
               className="mb-5 text-center"
             >
-              <h6 className="section__subtitle">Explore our blogs</h6>
-              <h2 className="section__title">Latest Blogs</h2>
+              <h2 className="section__title">Jobs</h2>
+              <h6 className="section__subtitle">Open Positions</h6>
             </Col>
 
             <BlogList />
