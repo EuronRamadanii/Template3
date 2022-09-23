@@ -19,11 +19,14 @@ const Services = () => {
 const ServiceItem = ({ item }) => (
   <Col lg="6" md="4" sm="6" className="mb-3">
     <div className="service__item">
-      <span className="mb-3 d-inline-block">
-        <i class={item.icon} />
+      <span
+        className="mb-3 d-flex"
+        style={{ alignItems: "flex-end", justifyContent: "flex-start" }}
+      >
+        <i class={item.icon} style={{marginRight: '5px'}} />
+        <h1>{item.title}</h1>
       </span>
 
-      <h1>{item.title}</h1>
       <p className="section__description">{item.desc}</p>
       {item.subLinks.map((sub) => (
         <div style={{ marginLeft: "40px" }}>
