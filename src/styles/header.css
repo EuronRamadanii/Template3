@@ -181,6 +181,10 @@
   .nav__right {
     display: none;
   }
+  #Euroni{
+    color: #6b6600;
+
+  }
 
   .mobile__menu {
     display: block;
@@ -225,5 +229,9 @@
 @media only screen and (max-width: 992px) {
   .fshihe {
     display: none;
+  }
+  #Euroni{
+    color: #6b6600;
+    
   }
 }

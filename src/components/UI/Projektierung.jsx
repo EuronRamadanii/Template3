@@ -4,6 +4,7 @@ import service1 from "../../assets/data/service1";
 import "../../styles/services-list.css";
 // import service12 from "../../assets/all-images/service_1.2671af4c.png";
 import servicePhoto from "../../assets/all-images/services.jpg";
+import { ScrollToTop } from "./ScrollToTop";
 
 const Projektierung = ({ item }) => {
   return (
@@ -17,6 +18,9 @@ const Projektierung = ({ item }) => {
 const ServiceItem = ({ item }) => (
   <>
     <div className="d-flex">
+      <div>
+        <ScrollToTop />
+      </div>
       <Container>
         <Row>
           <Col lg="6" md="10" sm="10" className="mb-3" style={{}}>
