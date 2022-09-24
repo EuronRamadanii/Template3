@@ -4,11 +4,15 @@ import "../../styles/about-section.css";
 import BecomeDriverSection from "./BecomeDriverSection";
 import CommonSection from "./CommonSection";
 import driveImg from "../../assets/all-images/drive.jpg";
+import { ScrollToTop } from "./ScrollToTop";
 // import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
 
 const AboutSection = ({ aboutClass }) => {
   return (
     <>
+      <div>
+        <ScrollToTop />
+      </div>
       <CommonSection title="Company" />
       <section
         className="about__section"
@@ -59,7 +63,12 @@ const AboutSection = ({ aboutClass }) => {
 
             <Col lg="6" md="9">
               <div className="about__img">
-                {/* <img src={aboutImg} alt="" className="w-100" /> */}
+                <img
+                  style={{ height: "300px" }}
+                  src="https://st4.depositphotos.com/19305274/31411/i/450/depositphotos_314115366-stock-photo-car-sell-agent-client-car.jpg"
+                  alt=""
+                  className="w-100"
+                />
               </div>
             </Col>
           </Row>
@@ -68,7 +77,12 @@ const AboutSection = ({ aboutClass }) => {
           <Row className="client-con2">
             <Col lg="6" md="9">
               <div className="about__img">
-                {/* <img src={aboutImg} alt="" className="w-100" /> */}
+                <img
+                  style={{ height: "300px" }}
+                  src="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/automotive/damil-gettyimages-723504579-670.jpg"
+                  alt=""
+                  className="w-100"
+                />
               </div>
             </Col>
 
@@ -155,7 +169,12 @@ const AboutSection = ({ aboutClass }) => {
 
             <Col lg="6" md="9">
               <div className="about__img">
-                {/* <img src={aboutImg} alt="" className="w-100" /> */}
+                <img
+                  style={{ height: "300px" }}
+                  src="https://media.istockphoto.com/photos/various-car-parts-and-accessories-on-black-background-picture-id1150507732?k=20&m=1150507732&s=612x612&w=0&h=kCrTc2zNQKb6WExxZOW6a60cTYSpjrKx-JOwIUd-YZk="
+                  alt=""
+                  className="w-100"
+                />
               </div>
             </Col>
           </Row>

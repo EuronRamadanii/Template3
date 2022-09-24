@@ -8,10 +8,14 @@ import CommonSection from "./CommonSection";
 // import photo1 from "../../assets/all-images/Max_Mustermann.jpg";
 // import photo2 from "../../assets/all-images/max2.jpg";
 import "../../styles/managment.css";
+import { ScrollToTop } from "./ScrollToTop";
 
 const Managment = ({ aboutClass }) => {
   return (
     <>
+      <div>
+        <ScrollToTop />
+      </div>
       <CommonSection title="" />
       <section
         className="about__section"

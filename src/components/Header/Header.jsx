@@ -203,8 +203,9 @@ const Header = () => {
                 >
                   <Dropdown.Toggle
                     variant="secondary"
-                    id="dropdown-basic"
-                    style={{ color: "#6b6600" }}
+                    // dropdown-basic
+                    id="Euroni"
+                    // style={{ color: "#6b6600" }}
                     className={(navClass) =>
                       navClass.isActive ? "nav__active nav__item" : "nav__item"
                     }
@@ -232,8 +233,9 @@ const Header = () => {
                 >
                   <Dropdown.Toggle
                     variant="secondary"
-                    id="dropdown-basic"
-                    style={{ color: "#6b6600" }}
+                    // dropdown-basic
+                    id="Euroni"
+                    // style={{ color: "#6b6600" }}
                     className={(navClass) =>
                       navClass.isActive ? "nav__active nav__item" : "nav__item"
                     }
