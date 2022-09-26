@@ -22,7 +22,7 @@ const ServiceItem = ({ item }) => (
         <ScrollToTop />
       </div>
       <Container>
-        <Row>
+        <Row className="service-i">
           <Col lg="6" md="10" sm="10" className="mb-3" style={{}}>
             <div className="service__item" style={{ width: "100%" }}>
               <span
