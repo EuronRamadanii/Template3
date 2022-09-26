@@ -27,7 +27,7 @@ const Managment = ({ aboutClass }) => {
         }
       >
         <Container>
-          <h1 style={{ textAlign: "center" }}>Our Managment</h1>
+          <h1 style={{ textAlign: "center" }}>Our Management</h1>
           <br />
           <h5 style={{ textAlign: "center" }}>
             CONTEXT ist inhabergeführt und konzernunabhängig. Den Vorstand
