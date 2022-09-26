@@ -19,9 +19,6 @@ const BlogItem = ({ item }) => {
 
   return (
     <div>
-    
-      
-      
       {/* <div className="blog__item">
         <img src={imgUrl} alt="" className="w-100" />
         <div className="blog__info p-3">
@@ -34,7 +31,7 @@ const BlogItem = ({ item }) => {
               : description}
           </p>
 
-        
+
 
            <div className="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
             <span className="blog__author">
@@ -53,11 +50,13 @@ const BlogItem = ({ item }) => {
           </div>
         </div>
       </div> */}
-      <Link to={`/blogs/${title}`} className="read__more" style={{lineHeight:"2"}}>
-          {author}
+      <Link
+        to={`/career/${title}`}
+        className="read__more"
+        style={{ lineHeight: "2" }}
+      >
+        {author}
       </Link>
-      
-
     </div>
   );
 };

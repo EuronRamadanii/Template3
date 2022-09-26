@@ -187,7 +187,7 @@ const Header = () => {
 
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <div className="menu">
-                {navLinks.map((item, index) => (
+                {/* {navLinks.map((item, index) => (
                   <NavLink
                     to={item.path}
                     className={(navClass) =>
@@ -198,7 +198,15 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
-                {navLinks[0].display}
+                {navLinks[0].display} */}
+                <NavLink
+                  to="/home"
+                  className={(navClass) =>
+                    navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  }
+                >
+                  Home
+                </NavLink>
                 <Dropdown
                   className="hover-dropdown"
                   show={isHovering2}
@@ -261,6 +269,23 @@ const Header = () => {
                     </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
+                <NavLink
+                  to="/contact"
+                  className={(navClass) =>
+                    navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  }
+                >
+                  Contact
+                </NavLink>
+
+                <NavLink
+                  to="/career"
+                  className={(navClass) =>
+                    navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  }
+                >
+                  Career
+                </NavLink>
               </div>
             </div>
 
