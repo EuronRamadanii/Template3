@@ -6,7 +6,7 @@ import logo from "../../assets/all-images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
-import { useState } from "react";
+// import { useState } from "react";
 import english from "../../assets/all-images/united-kingdom.png";
 import deutsch from "../../assets/all-images/germany.png";
 
@@ -41,8 +41,8 @@ import deutsch from "../../assets/all-images/germany.png";
 
 const Header = () => {
   const menuRef = useRef(null);
-  const [isHovering, setIsHovering] = useState(false);
-  const [isHovering2, setIsHovering2] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering2, setIsHovering2] = useState(false);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
@@ -196,9 +196,7 @@ const Header = () => {
                 >
                   Home
                 </NavLink>
-                <Dropdown
-                  className="hover-dropdown"
-                >
+                <Dropdown className="hover-dropdown">
                   <Dropdown.Toggle
                     variant="secondary"
                     // dropdown-basic
@@ -239,9 +237,7 @@ const Header = () => {
                   </Dropdown.Menu>
                 </Dropdown>
 
-                <Dropdown
-                  className="hover-dropdown"
-                >
+                <Dropdown className="hover-dropdown">
                   <Dropdown.Toggle
                     variant="secondary"
                     id="Euroni"
