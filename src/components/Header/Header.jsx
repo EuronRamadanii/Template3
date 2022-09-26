@@ -288,22 +288,23 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
-
-            <div className="nav__right fshihe">
-              <div className="search__box">
-                <input type="text" placeholder="Search" />
-                <span>
-                  <i className="ri-search-line"></i>
-                </span>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+              <div className="nav__right fshihe">
+                <div className="search__box">
+                  <input type="text" placeholder="Search" />
+                  <span>
+                    <i className="ri-search-line"></i>
+                  </span>
+                </div>
               </div>
-            </div>
-            <div>
-              <img
-                src={english}
-                style={{ height: "20px", marginRight: "10px" }}
-                alt=""
-              />
-              <img src={deutsch} style={{ height: "20px" }} alt="" />
+              <div style={{marginLeft: '15px'}}>
+                <img
+                  src={english}
+                  style={{ height: "20px", marginRight: "10px" }}
+                  alt=""
+                />
+                <img src={deutsch} style={{ height: "20px" }} alt="" />
+              </div>
             </div>
           </div>
         </Container>
