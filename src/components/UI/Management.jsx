@@ -253,6 +253,7 @@ const Managment = ({ aboutClass }) => {
             active={isBremer}
             style={{ marginRight: "10px", backgroundColor: "#202225" }}
             className="map-btn"
+            type="button"
             variant="primary"
             onClick={() => {
               setIsBremer(true);
@@ -264,6 +265,7 @@ const Managment = ({ aboutClass }) => {
           </Button>{" "}
           <Button
             active={isAustria}
+            type="button"
             style={{ marginRight: "10px", backgroundColor: "#202225" }}
             className="map-btn"
             variant="primary"
@@ -277,6 +279,7 @@ const Managment = ({ aboutClass }) => {
           </Button>{" "}
           <Button
             style={{ backgroundColor: "#202225" }}
+            type="button"
             active={isWolfsburg}
             className="map-btn"
             variant="primary"
