@@ -46,18 +46,6 @@ const Header = () => {
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
-  const enterDropdown = () => {
-    setIsHovering(true);
-  };
-  const leaveDropdown = () => {
-    setIsHovering(false);
-  };
-  const enterDropdown2 = () => {
-    setIsHovering2(true);
-  };
-  const leaveDropdown2 = () => {
-    setIsHovering2(false);
-  };
   const navigate = useNavigate();
 
   const goToClient = () => {
@@ -78,7 +66,7 @@ const Header = () => {
   const goToTeam = () => {
     navigate("/team");
   };
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <header className="header">
@@ -210,9 +198,6 @@ const Header = () => {
                 </NavLink>
                 <Dropdown
                   className="hover-dropdown"
-                  show={isHovering2}
-                  onMouseOver={enterDropdown2}
-                  onMouseLeave={leaveDropdown2}
                 >
                   <Dropdown.Toggle
                     variant="secondary"
@@ -226,7 +211,7 @@ const Header = () => {
                   >
                     Leistungen
                   </Dropdown.Toggle>
-                  <Dropdown.Menu show={isHovering2}>
+                  <Dropdown.Menu>
                     <Dropdown.Item
                       onClick={goToProjektierung}
                       active={
@@ -256,22 +241,17 @@ const Header = () => {
 
                 <Dropdown
                   className="hover-dropdown"
-                  show={isHovering}
-                  onMouseOver={enterDropdown}
-                  onMouseLeave={leaveDropdown}
                 >
                   <Dropdown.Toggle
                     variant="secondary"
-                    // dropdown-basic
                     id="Euroni"
-                    // style={{ color: "#6b6600" }}
                     className={(navClass) =>
                       navClass.isActive ? "nav__active nav__item" : "nav__item"
                     }
                   >
                     Company
                   </Dropdown.Toggle>
-                  <Dropdown.Menu show={isHovering}>
+                  <Dropdown.Menu>
                     <Dropdown.Item
                       onClick={goToClient}
                       active={
@@ -290,9 +270,7 @@ const Header = () => {
                     </Dropdown.Item>
                     <Dropdown.Item
                       onClick={goToTeam}
-                      active={
-                        location.pathname.includes("team") ? true : false
-                      }
+                      active={location.pathname.includes("team") ? true : false}
                     >
                       Team
                     </Dropdown.Item>

@@ -173,6 +173,8 @@
 }
 .dropdown-item:hover {
   color: #f9a826 !important;
+  transition: all 200ms ease-in-out;
+  background-color: transparent;
 }
 .hover-dropdown {
   background-color: transparent;
