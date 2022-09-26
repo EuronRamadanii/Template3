@@ -10,7 +10,7 @@ import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 // import Industry from "../components/UI/IndustrySection";
 import AboutSection from "../components/UI/AboutSection";
-import Managment from "../components/UI/Managment";
+import Management from "../components/UI/Management";
 import Locations from "../components/UI/Locations";
 import CompanyActivities from "../components/UI/CompanyActivities";
 import Projektierung from "../components/UI/Projektierung.jsx";
@@ -23,11 +23,11 @@ const Routers = () => {
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/cars" element={<CarListing />} />
-      <Route path="/cars/:slug" element={<CarDetails />} />
+      <Route path="/team" element={<CarListing />} />
+      <Route path="/team/:slug" element={<CarDetails />} />
       <Route path="/career" element={<Blog />} />
       <Route path="/client" element={<AboutSection />} />
-      <Route path="/managment" element={<Managment />} />
+      <Route path="/management" element={<Management />} />
       <Route path="/locations" element={<Locations />} />
       <Route path="/career/:slug" element={<BlogDetails />} />
       <Route path="/activities" element={<CompanyActivities />} />

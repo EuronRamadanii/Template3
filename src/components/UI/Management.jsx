@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import "../../styles/about-section.css";
 // import BecomeDriverSection from "./BecomeDriverSection";
@@ -12,6 +12,14 @@ import { ScrollToTop } from "./ScrollToTop";
 import BecomeDriverSection from "./BecomeDriverSection";
 
 const Managment = ({ aboutClass }) => {
+  const [isBremer, setIsBremer] = useState(true);
+  const [isAustria, setIsAustria] = useState(false);
+  const [isWolfsburg, setIsWolfsburg] = useState(false);
+
+  // const changetoBremer = () => {};
+  // const changetoAustria = () => {};
+  // const changetoW = () => {};
+
   return (
     <>
       <div>
@@ -27,7 +35,7 @@ const Managment = ({ aboutClass }) => {
         }
       >
         <Container>
-          <h1 style={{ textAlign: "center" }}>Our Managment</h1>
+          <h1 style={{ textAlign: "center" }}>Our Management</h1>
           <br />
           <h5 style={{ textAlign: "center" }}>
             CONTEXT ist inhabergeführt und konzernunabhängig. Den Vorstand
@@ -175,6 +183,7 @@ const Managment = ({ aboutClass }) => {
           </Row>
         </Container>
       </section>
+
       <Container>
         <Row>
           <h1 style={{ textAlign: "center" }}>The history of Context</h1>
@@ -228,45 +237,96 @@ const Managment = ({ aboutClass }) => {
                 Bremer Straße. Besucherparkplätze halten wir gebäuderückseitig
                 für Sie bereit.
               </p>
-              <Button variant="primary">Primary</Button>
-              <button>dsdsf</button>
             </div>
           </div>
         </Row>
       </Container>
       <Container style={{ marginTop: "100px", marginBottom: "20px" }}>
+        <h1 style={{ textAlign: "center", marginBottom: "30px" }}>
+          Our Locations
+        </h1>
+        <div
+          style={{
+            marginBottom: "20px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Button
+            active={isBremer}
+            style={{ marginRight: "10px", backgroundColor: "#000d6b" }}
+            className="map-btn"
+            type="button"
+            variant="primary"
+            onClick={() => {
+              setIsBremer(true);
+              setIsAustria(false);
+              setIsWolfsburg(false);
+            }}
+          >
+            München, Germany
+          </Button>{" "}
+          <Button
+            active={isAustria}
+            type="button"
+            style={{ marginRight: "10px", backgroundColor: "#000d6b" }}
+            className="map-btn"
+            variant="primary"
+            onClick={() => {
+              setIsBremer(false);
+              setIsAustria(true);
+              setIsWolfsburg(false);
+            }}
+          >
+            Raaba, Austria
+          </Button>{" "}
+          <Button
+            style={{ backgroundColor: "#000d6b" }}
+            type="button"
+            active={isWolfsburg}
+            className="map-btn"
+            variant="primary"
+            onClick={() => {
+              setIsBremer(false);
+              setIsAustria(false);
+              setIsWolfsburg(true);
+            }}
+          >
+            Wolfsburg, Germany
+          </Button>{" "}
+        </div>
         <Row>
-          <iframe
-            style={{ width: "50%", height: "300px" }}
-            src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            title="r"
-          ></iframe>
-
-          <iframe
-            style={{ width: "50%", height: "300px" }}
-            src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            title="r"
-            marginwidth="0"
-          ></iframe>
-
-          {/* <div style={{ marginTop: "20px" }}> */}
-          <iframe
-            style={{ width: "50%", height: "300px" }}
-            src="https://maps.google.com/maps?q=Lessingstra%C3%9Fe%2072,%2038440,%20Wolfsburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            title="r"
-          ></iframe>
-          {/* </div> */}
+          {isBremer ? (
+            <iframe
+              style={{ width: "100%", height: "300px" }}
+              src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              title="r"
+            ></iframe>
+          ) : isAustria ? (
+            <iframe
+              style={{ width: "100%", height: "300px" }}
+              src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              title="r"
+              marginwidth="0"
+            ></iframe>
+          ) : (
+            <iframe
+              style={{ width: "100%", height: "300px" }}
+              src="https://maps.google.com/maps?q=Lessingstra%C3%9Fe%2072,%2038440,%20Wolfsburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              title="r"
+            ></iframe>
+          )}
         </Row>
       </Container>
       <BecomeDriverSection />

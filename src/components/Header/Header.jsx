@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import logo from "../../assets/all-images/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/header.css";
-import { useState } from "react";
+// import { useState } from "react";
 import english from "../../assets/all-images/united-kingdom.png";
 import deutsch from "../../assets/all-images/germany.png";
 
@@ -41,30 +41,18 @@ import deutsch from "../../assets/all-images/germany.png";
 
 const Header = () => {
   const menuRef = useRef(null);
-  const [isHovering, setIsHovering] = useState(false);
-  const [isHovering2, setIsHovering2] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering2, setIsHovering2] = useState(false);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
-  const enterDropdown = () => {
-    setIsHovering(true);
-  };
-  const leaveDropdown = () => {
-    setIsHovering(false);
-  };
-  const enterDropdown2 = () => {
-    setIsHovering2(true);
-  };
-  const leaveDropdown2 = () => {
-    setIsHovering2(false);
-  };
   const navigate = useNavigate();
 
   const goToClient = () => {
     navigate("/client");
   };
   const goToManagment = () => {
-    navigate("/managment");
+    navigate("/management");
   };
   const goToProjektierung = () => {
     navigate("/services/project");
@@ -76,8 +64,9 @@ const Header = () => {
     navigate("/services/schulungen");
   };
   const goToTeam = () => {
-    navigate("/cars");
+    navigate("/team");
   };
+  const location = useLocation();
 
   return (
     <header className="header">
@@ -207,12 +196,7 @@ const Header = () => {
                 >
                   Home
                 </NavLink>
-                <Dropdown
-                  className="hover-dropdown"
-                  show={isHovering2}
-                  onMouseOver={enterDropdown2}
-                  onMouseLeave={leaveDropdown2}
-                >
+                <Dropdown className="hover-dropdown">
                   <Dropdown.Toggle
                     variant="secondary"
                     // dropdown-basic
@@ -225,42 +209,67 @@ const Header = () => {
                   >
                     Leistungen
                   </Dropdown.Toggle>
-                  <Dropdown.Menu show={isHovering2}>
-                    <Dropdown.Item onClick={goToProjektierung}>
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      onClick={goToProjektierung}
+                      active={
+                        location.pathname.includes("project") ? true : false
+                      }
+                    >
                       Projektierung & Umsetzung
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={goToBeratung}>
+                    <Dropdown.Item
+                      onClick={goToBeratung}
+                      active={
+                        location.pathname.includes("beratung") ? true : false
+                      }
+                    >
                       Beratung
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={goToSchulungen}>
+                    <Dropdown.Item
+                      onClick={goToSchulungen}
+                      active={
+                        location.pathname.includes("schulungen") ? true : false
+                      }
+                    >
                       Schulungen
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
 
-                <Dropdown
-                  className="hover-dropdown"
-                  show={isHovering}
-                  onMouseOver={enterDropdown}
-                  onMouseLeave={leaveDropdown}
-                >
+                <Dropdown className="hover-dropdown">
                   <Dropdown.Toggle
                     variant="secondary"
-                    // dropdown-basic
                     id="Euroni"
-                    // style={{ color: "#6b6600" }}
                     className={(navClass) =>
                       navClass.isActive ? "nav__active nav__item" : "nav__item"
                     }
                   >
                     Company
                   </Dropdown.Toggle>
-                  <Dropdown.Menu show={isHovering}>
-                    <Dropdown.Item onClick={goToClient}>Client</Dropdown.Item>
-                    <Dropdown.Item onClick={goToManagment}>
-                      Managment
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      onClick={goToClient}
+                      active={
+                        location.pathname.includes("client") ? true : false
+                      }
+                    >
+                      Client
                     </Dropdown.Item>
-                    <Dropdown.Item onClick={goToTeam}>Team</Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={goToManagment}
+                      active={
+                        location.pathname.includes("management") ? true : false
+                      }
+                    >
+                      Management
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={goToTeam}
+                      active={location.pathname.includes("team") ? true : false}
+                    >
+                      Team
+                    </Dropdown.Item>
                     {/* <Dropdown.Item onClick={goToLocations}>
                       Locations
                     </Dropdown.Item>
@@ -288,7 +297,7 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
-            <div style={{display: 'flex', alignItems: 'center'}}>
+            <div style={{ display: "flex", alignItems: "center" }}>
               <div className="nav__right fshihe">
                 <div className="search__box">
                   <input type="text" placeholder="Search" />
@@ -297,7 +306,7 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <div style={{marginLeft: '15px'}}>
+              <div style={{ marginLeft: "15px" }}>
                 <img
                   src={english}
                   style={{ height: "20px", marginRight: "10px" }}

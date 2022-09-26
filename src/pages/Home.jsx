@@ -13,8 +13,8 @@ import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import '../styles/home.css'
 
-import BlogList from "../components/UI/BlogList";
 import OurMembers from "../components/UI/OurMembers";
 import { ScrollToTop } from "../components/UI/ScrollToTop";
 // import About from "./About";
@@ -34,7 +34,7 @@ const Home = () => {
 
         <div className="hero__form">
           <Container>
-            <Row className="form__row">
+            <Row className="form__row contex">
               <Col lg="4" md="4">
                 <div className="find__cars-left">
                   <h2>
@@ -152,7 +152,7 @@ const Home = () => {
       </section>
 
       {/* =============== blog section =========== */}
-      <section data-aos="zoom-in" data-aos-duration="1700">
+      {/* <section data-aos="zoom-in" data-aos-duration="1700">
         <Container data-aos="zoom-in" data-aos-duration="1700">
           <Row>
             <Col
@@ -168,7 +168,7 @@ const Home = () => {
             <BlogList />
           </Row>
         </Container>
-      </section>
+      </section> */}
     </Helmet>
   );
 };
