@@ -19,10 +19,10 @@ const navLinks = [
   //   path: "/about",
   //   display: "Company",
   // },
-  {
-    path: "/cars",
-    display: "Team",
-  },
+  // {
+  //   path: "/cars",
+  //   display: "Team",
+  // },
 
   {
     path: "/blogs",
@@ -74,6 +74,9 @@ const Header = () => {
   };
   const goToSchulungen = () => {
     navigate("/services/schulungen");
+  };
+  const goToTeam = () => {
+    navigate("/cars");
   };
 
   return (
@@ -195,6 +198,7 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
+                {navLinks[0].display}
                 <Dropdown
                   className="hover-dropdown"
                   show={isHovering2}
@@ -248,6 +252,7 @@ const Header = () => {
                     <Dropdown.Item onClick={goToManagment}>
                       Managment
                     </Dropdown.Item>
+                    <Dropdown.Item onClick={goToTeam}>Team</Dropdown.Item>
                     {/* <Dropdown.Item onClick={goToLocations}>
                       Locations
                     </Dropdown.Item>

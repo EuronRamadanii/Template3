@@ -9,6 +9,7 @@ import CommonSection from "./CommonSection";
 // import photo2 from "../../assets/all-images/max2.jpg";
 import "../../styles/managment.css";
 import { ScrollToTop } from "./ScrollToTop";
+import BecomeDriverSection from "./BecomeDriverSection";
 
 const Managment = ({ aboutClass }) => {
   return (
@@ -174,6 +175,7 @@ const Managment = ({ aboutClass }) => {
           </Row>
         </Container>
       </section>
+
       <Container>
         <Row>
           <h1 style={{ textAlign: "center" }}>The history of Context</h1>
@@ -231,7 +233,7 @@ const Managment = ({ aboutClass }) => {
           </div>
         </Row>
       </Container>
-      <Container style={{ marginTop: "100px" }}>
+      <Container style={{ marginTop: "100px", marginBottom: "20px" }}>
         <Row>
           <iframe
             style={{ width: "50%", height: "300px" }}
@@ -266,6 +268,7 @@ const Managment = ({ aboutClass }) => {
           </div>
         </Row>
       </Container>
+      <BecomeDriverSection />
       <Container style={{ marginBottom: "50px", marginTop: "100px" }}>
         <h3 style={{ textAlign: "center" }}>Firmenaktivitäten</h3>
         <h5 style={{ textAlign: "center", marginBottom: "20px" }}>
