@@ -10,34 +10,34 @@ import { useState } from "react";
 import english from "../../assets/all-images/united-kingdom.png";
 import deutsch from "../../assets/all-images/germany.png";
 
-const navLinks = [
-  {
-    path: "/home",
-    display: "Home",
-  },
-  // {
-  //   path: "/about",
-  //   display: "Company",
-  // },
-  // {
-  //   path: "/cars",
-  //   display: "Team",
-  // },
+// const navLinks = [
+//   {
+//     path: "/home",
+//     display: "Home",
+//   },
+//   // {
+//   //   path: "/about",
+//   //   display: "Company",
+//   // },
+//   // {
+//   //   path: "/cars",
+//   //   display: "Team",
+//   // },
 
-  {
-    path: "/blogs",
-    display: "Career",
-  },
-  {
-    path: "/contact",
-    display: "Contact",
-  },
+//   {
+//     path: "/blogs",
+//     display: "Career",
+//   },
+//   {
+//     path: "/contact",
+//     display: "Contact",
+//   },
 
-  // {
-  //   path: "/client",
-  //   display: "Company",
-  // },
-];
+//   // {
+//   //   path: "/client",
+//   //   display: "Company",
+//   // },
+// ];
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -82,8 +82,8 @@ const Header = () => {
   return (
     <header className="header">
       {/* ============ header top ============ */}
-      <div className="header__top">
-        <Container>
+      {/* <div className="header__top"> */}
+      {/* <Container>
           <Row>
             <Col lg="6" md="6" sm="6">
               <div className="header__top__left">
@@ -92,9 +92,9 @@ const Header = () => {
                   <i class="ri-phone-fill"></i> +49 (0)89 35477460
                 </span>
               </div>
-            </Col>
+            </Col> */}
 
-            {/* <Col lg="6" md="6" sm="6">
+      {/* <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
                 <Link to="#" className=" d-flex align-items-center gap-1">
                   <i class="ri-login-circle-line"></i> Login
@@ -105,9 +105,9 @@ const Header = () => {
                 </Link>
               </div>
             </Col> */}
-          </Row>
-        </Container>
-      </div>
+      {/* </Row>
+        </Container> */}
+      {/* </div> */}
 
       {/* =============== header middle =========== */}
       <div className="header__middle">
