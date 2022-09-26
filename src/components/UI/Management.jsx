@@ -242,6 +242,7 @@ const Managment = ({ aboutClass }) => {
         </Row>
       </Container>
       <Container style={{ marginTop: "100px", marginBottom: "20px" }}>
+        <h1 style={{textAlign: 'center', marginBottom: '30px'}}>Our Locations</h1>
         <div
           style={{
             marginBottom: "20px",
