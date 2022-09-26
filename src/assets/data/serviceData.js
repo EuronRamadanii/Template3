@@ -2,6 +2,7 @@ const serviceData = [
   {
     id: 1,
     title: "Projektierung & Umsetzung",
+    path: "/services/project",
     icon: "ri-map-pin-2-line",
     desc: "CONTEXT übernimmt auf Wunsch die komplette Steuerung im Rahmen der Projektplanung, -durchführung und -abschlußanalyse.",
     desc2:
@@ -103,6 +104,7 @@ const serviceData = [
   {
     id: 2,
     title: "Beratung",
+    path: "/services/beratung",
     icon: "ri-community-line",
     desc: "Im Vordergrund steht auch hier der Anspruch, dass unsere Lösungen sowohl praktikabel als auch effizient sind und zu den Arbeitsabläufen unserer Kunden passen.",
     desc2:
@@ -175,6 +177,7 @@ const serviceData = [
   {
     id: 3,
     title: "Schulungen",
+    path: "/services/schulungen",
     icon: "ri-roadster-line",
     desc: "Die CONTEXT-Akademie bietet sowohl unternehmensspezifische Schulungen als auch allen Interessierten zugängliche Seminare.",
     desc2:
