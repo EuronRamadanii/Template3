@@ -56,17 +56,41 @@ const Home = () => {
       {/* <AboutSection /> */}
       {/* <About /> */}
       {/* ========== services section ============ */}
+      <section>
+        <Container>
+          <Row data-aos="zoom-in" data-aos-duration="1700">
+            <Col lg="12" className="mb-5 text-center">
+              <h1
+                style={{ marginBottom: "50px" }}
+                data-aos="zoom-in"
+                data-aos-duration="1700"
+                className="section__title"
+              >
+                About Us
+              </h1>
+              <h4 style={{ fontStyle: "24px", color: "#7c8a97" }}>
+                CONTEXT plant, berät und setzt Projekte im Bereich
+                Qualitätsmanagement und Prozessmanagement um. Zusätzlich
+                vermitteln wir unser Methodenwissen in Seminaren und Schulungen.
+                Mit unserem Know-how unterstützen wir Technologieunternehmen bei
+                der erfolgreichen Entwicklung und Optimierung von Produkten und
+                Prozessen.
+              </h4>
+            </Col>
+          </Row>
+        </Container>
+      </section>
       <section data-aos="zoom-in" data-aos-duration="1700">
         <Container>
           <Row data-aos="zoom-in" data-aos-duration="1700">
             <Col lg="12" className="mb-5 text-center">
-              <h6
+              {/* <h6
                 data-aos="zoom-in"
                 data-aos-duration="1700"
                 className="section__subtitle"
               >
                 See our
-              </h6>
+              </h6> */}
               <h2
                 data-aos="zoom-in"
                 data-aos-duration="1700"

@@ -10,34 +10,34 @@ import { useState } from "react";
 import english from "../../assets/all-images/united-kingdom.png";
 import deutsch from "../../assets/all-images/germany.png";
 
-const navLinks = [
-  {
-    path: "/home",
-    display: "Home",
-  },
-  // {
-  //   path: "/about",
-  //   display: "Company",
-  // },
-  {
-    path: "/cars",
-    display: "Team",
-  },
+// const navLinks = [
+//   {
+//     path: "/home",
+//     display: "Home",
+//   },
+//   // {
+//   //   path: "/about",
+//   //   display: "Company",
+//   // },
+//   // {
+//   //   path: "/cars",
+//   //   display: "Team",
+//   // },
 
-  {
-    path: "/blogs",
-    display: "Career",
-  },
-  {
-    path: "/contact",
-    display: "Contact",
-  },
+//   {
+//     path: "/blogs",
+//     display: "Career",
+//   },
+//   {
+//     path: "/contact",
+//     display: "Contact",
+//   },
 
-  // {
-  //   path: "/client",
-  //   display: "Company",
-  // },
-];
+//   // {
+//   //   path: "/client",
+//   //   display: "Company",
+//   // },
+// ];
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -75,12 +75,15 @@ const Header = () => {
   const goToSchulungen = () => {
     navigate("/services/schulungen");
   };
+  const goToTeam = () => {
+    navigate("/cars");
+  };
 
   return (
     <header className="header">
       {/* ============ header top ============ */}
-      <div className="header__top">
-        <Container>
+      {/* <div className="header__top"> */}
+      {/* <Container>
           <Row>
             <Col lg="6" md="6" sm="6">
               <div className="header__top__left">
@@ -89,9 +92,9 @@ const Header = () => {
                   <i class="ri-phone-fill"></i> +49 (0)89 35477460
                 </span>
               </div>
-            </Col>
+            </Col> */}
 
-            {/* <Col lg="6" md="6" sm="6">
+      {/* <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
                 <Link to="#" className=" d-flex align-items-center gap-1">
                   <i class="ri-login-circle-line"></i> Login
@@ -102,9 +105,9 @@ const Header = () => {
                 </Link>
               </div>
             </Col> */}
-          </Row>
-        </Container>
-      </div>
+      {/* </Row>
+        </Container> */}
+      {/* </div> */}
 
       {/* =============== header middle =========== */}
       <div className="header__middle">
@@ -184,7 +187,7 @@ const Header = () => {
 
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <div className="menu">
-                {navLinks.map((item, index) => (
+                {/* {navLinks.map((item, index) => (
                   <NavLink
                     to={item.path}
                     className={(navClass) =>
@@ -195,6 +198,15 @@ const Header = () => {
                     {item.display}
                   </NavLink>
                 ))}
+                {navLinks[0].display} */}
+                <NavLink
+                  to="/home"
+                  className={(navClass) =>
+                    navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  }
+                >
+                  Home
+                </NavLink>
                 <Dropdown
                   className="hover-dropdown"
                   show={isHovering2}
@@ -248,6 +260,7 @@ const Header = () => {
                     <Dropdown.Item onClick={goToManagment}>
                       Managment
                     </Dropdown.Item>
+                    <Dropdown.Item onClick={goToTeam}>Team</Dropdown.Item>
                     {/* <Dropdown.Item onClick={goToLocations}>
                       Locations
                     </Dropdown.Item>
@@ -256,24 +269,42 @@ const Header = () => {
                     </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
-              </div>
-            </div>
+                <NavLink
+                  to="/contact"
+                  className={(navClass) =>
+                    navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  }
+                >
+                  Contact
+                </NavLink>
 
-            <div className="nav__right fshihe">
-              <div className="search__box">
-                <input type="text" placeholder="Search" />
-                <span>
-                  <i className="ri-search-line"></i>
-                </span>
+                <NavLink
+                  to="/career"
+                  className={(navClass) =>
+                    navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  }
+                >
+                  Career
+                </NavLink>
               </div>
             </div>
-            <div>
-              <img
-                src={english}
-                style={{ height: "20px", marginRight: "10px" }}
-                alt=""
-              />
-              <img src={deutsch} style={{ height: "20px" }} alt="" />
+            <div style={{display: 'flex', alignItems: 'center'}}>
+              <div className="nav__right fshihe">
+                <div className="search__box">
+                  <input type="text" placeholder="Search" />
+                  <span>
+                    <i className="ri-search-line"></i>
+                  </span>
+                </div>
+              </div>
+              <div style={{marginLeft: '15px'}}>
+                <img
+                  src={english}
+                  style={{ height: "20px", marginRight: "10px" }}
+                  alt=""
+                />
+                <img src={deutsch} style={{ height: "20px" }} alt="" />
+              </div>
             </div>
           </div>
         </Container>

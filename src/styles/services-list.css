@@ -42,4 +42,7 @@
   .fixed-photo {
     display: none;
   }
+  .service-i {
+    justify-content: center;
+  }
 }

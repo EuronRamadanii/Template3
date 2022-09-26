@@ -25,11 +25,11 @@ const Routers = () => {
       <Route path="/about" element={<About />} />
       <Route path="/cars" element={<CarListing />} />
       <Route path="/cars/:slug" element={<CarDetails />} />
-      <Route path="/blogs" element={<Blog />} />
+      <Route path="/career" element={<Blog />} />
       <Route path="/client" element={<AboutSection />} />
       <Route path="/managment" element={<Managment />} />
       <Route path="/locations" element={<Locations />} />
-      <Route path="/blogs/:slug" element={<BlogDetails />} />
+      <Route path="/career/:slug" element={<BlogDetails />} />
       <Route path="/activities" element={<CompanyActivities />} />
       <Route path="/services/project" element={<Projektierung />} />
       <Route path="/services/beratung" element={<Beratung />} />
