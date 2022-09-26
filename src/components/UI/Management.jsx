@@ -242,7 +242,9 @@ const Managment = ({ aboutClass }) => {
         </Row>
       </Container>
       <Container style={{ marginTop: "100px", marginBottom: "20px" }}>
-        <h1 style={{textAlign: 'center', marginBottom: '30px'}}>Our Locations</h1>
+        <h1 style={{ textAlign: "center", marginBottom: "30px" }}>
+          Our Locations
+        </h1>
         <div
           style={{
             marginBottom: "20px",
@@ -252,7 +254,7 @@ const Managment = ({ aboutClass }) => {
         >
           <Button
             active={isBremer}
-            style={{ marginRight: "10px", backgroundColor: "#202225" }}
+            style={{ marginRight: "10px", backgroundColor: "#000d6b" }}
             className="map-btn"
             type="button"
             variant="primary"
@@ -267,7 +269,7 @@ const Managment = ({ aboutClass }) => {
           <Button
             active={isAustria}
             type="button"
-            style={{ marginRight: "10px", backgroundColor: "#202225" }}
+            style={{ marginRight: "10px", backgroundColor: "#000d6b" }}
             className="map-btn"
             variant="primary"
             onClick={() => {
@@ -279,7 +281,7 @@ const Managment = ({ aboutClass }) => {
             Raaba, Austria
           </Button>{" "}
           <Button
-            style={{ backgroundColor: "#202225" }}
+            style={{ backgroundColor: "#000d6b" }}
             type="button"
             active={isWolfsburg}
             className="map-btn"
