@@ -50,21 +50,27 @@ const Header = () => {
 
   const goToClient = () => {
     navigate("/client");
+    toggleMenu();
   };
   const goToManagment = () => {
     navigate("/management");
+    toggleMenu();
   };
   const goToProjektierung = () => {
     navigate("/services/project");
+    toggleMenu();
   };
   const goToBeratung = () => {
     navigate("/services/beratung");
+    toggleMenu();
   };
   const goToSchulungen = () => {
     navigate("/services/schulungen");
+    toggleMenu();
   };
   const goToTeam = () => {
     navigate("/team");
+    toggleMenu();
   };
   const location = useLocation();
 
@@ -174,7 +180,7 @@ const Header = () => {
               <i class="ri-menu-line" onClick={toggleMenu}></i>
             </span>
 
-            <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+            <div className="navigation" ref={menuRef}>
               <div className="menu">
                 {/* {navLinks.map((item, index) => (
                   <NavLink
@@ -193,21 +199,20 @@ const Header = () => {
                   className={(navClass) =>
                     navClass.isActive ? "nav__active nav__item" : "nav__item"
                   }
+                  onClick={toggleMenu}
                 >
                   Home
                 </NavLink>
-                <Dropdown
-                  className="hover-dropdown"
-                >
+                <Dropdown className="hover-dropdown">
                   <Dropdown.Toggle
                     variant="secondary"
                     // dropdown-basic
                     id="Euroni"
                     // style={{ color: "#6b6600" }}
 
-                    className={(navClass) =>
-                      navClass.isActive ? "nav__active nav__item" : "nav__item"
-                    }
+                    // className={(navClass) =>
+                    //   navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    // }
                   >
                     Leistungen
                   </Dropdown.Toggle>
@@ -239,9 +244,7 @@ const Header = () => {
                   </Dropdown.Menu>
                 </Dropdown>
 
-                <Dropdown
-                  className="hover-dropdown"
-                >
+                <Dropdown className="hover-dropdown">
                   <Dropdown.Toggle
                     variant="secondary"
                     id="Euroni"
@@ -284,6 +287,7 @@ const Header = () => {
                 </Dropdown>
                 <NavLink
                   to="/contact"
+                  onClick={toggleMenu}
                   className={(navClass) =>
                     navClass.isActive ? "nav__active nav__item" : "nav__item"
                   }
@@ -293,6 +297,7 @@ const Header = () => {
 
                 <NavLink
                   to="/career"
+                  onClick={toggleMenu}
                   className={(navClass) =>
                     navClass.isActive ? "nav__active nav__item" : "nav__item"
                   }
