@@ -1,9 +1,11 @@
 .service__item span i {
-  font-size: 10rem;
+  font-size: 2.5rem;
   color: #f9a826;
-  margin-left: 50%;
+  /* margin-left: 50%; */
 }
-
+/* .test{
+  margin-left: 50%;
+} */
 .service__item h6 {
   font-size: 1.2rem;
   font-weight: 600;

@@ -27,11 +27,18 @@ const ServiceItem = ({ item }) => (
             <div className="service__item" style={{ width: "100%" }}>
               <span
                 className="mb-3 d-flex"
-                style={{ alignItems: "flex-end", justifyContent: "flex-start" }}
+                style={{
+                  alignItems: "flex-end",
+                  justifyContent: "flex-start",
+                }}
               >
                 <i
                   class={item.icon}
-                  style={{ marginRight: "5px", textAlign: "center" }}
+                  style={{
+                    marginRight: "5px",
+                    textAlign: "center",
+                    fontSize: "2.5rem",
+                  }}
                 />
                 <h1 style={{ textAlign: "center" }}>{item.title}</h1>
               </span>

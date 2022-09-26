@@ -2,14 +2,14 @@ import React from "react";
 import { Col } from "reactstrap";
 import "../../styles/services-list.css";
 import servicesData from "../../assets/data/serviceData";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const ServicesList = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const goToClient = () => {
-    navigate("/client");
-  };
+  // const goToClient = () => {
+  //   navigate("/client");
+  // };
   return (
     <>
       {servicesData.map((item) => (
@@ -21,7 +21,7 @@ const ServicesList = () => {
 
 const ServiceItem = ({ item }) => (
   <Col lg="4" md="4" sm="6" className="mb-3">
-    <NavLink to={item.path} style={{textDecoration: 'none'}}>
+    <NavLink to={item.path} style={{ textDecoration: "none" }}>
       <div className="service__item">
         <span className="mb-3 d-inline-block">
           <i class={item.icon} />
