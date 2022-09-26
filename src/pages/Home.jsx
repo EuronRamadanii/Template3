@@ -13,6 +13,7 @@ import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import '../styles/home.css'
 
 import BlogList from "../components/UI/BlogList";
 import OurMembers from "../components/UI/OurMembers";
@@ -34,7 +35,7 @@ const Home = () => {
 
         <div className="hero__form">
           <Container>
-            <Row className="form__row">
+            <Row className="form__row contex">
               <Col lg="4" md="4">
                 <div className="find__cars-left">
                   <h2>

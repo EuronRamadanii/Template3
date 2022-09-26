@@ -78,7 +78,7 @@ const Header = () => {
   const goToTeam = () => {
     navigate("/team");
   };
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <header className="header">
@@ -257,8 +257,8 @@ const Header = () => {
                 <Dropdown
                   className="hover-dropdown"
                   show={isHovering}
-                  onMouseOver={enterDropdown}
-                  onMouseLeave={leaveDropdown}
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
                 >
                   <Dropdown.Toggle
                     variant="secondary"
@@ -290,9 +290,7 @@ const Header = () => {
                     </Dropdown.Item>
                     <Dropdown.Item
                       onClick={goToTeam}
-                      active={
-                        location.pathname.includes("team") ? true : false
-                      }
+                      active={location.pathname.includes("team") ? true : false}
                     >
                       Team
                     </Dropdown.Item>
