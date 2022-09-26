@@ -17,6 +17,10 @@
     width: 48%;
     padding: 15px 30px;
 }
+.map-btn:hover {
+    color: #f9a826 !important;
+    background-color: transparent !important;
+}
 
 
 .box2 h3{

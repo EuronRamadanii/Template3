@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { React, useState } from "react";
+import { Container, Row, Col, Button } from "reactstrap";
 import "../../styles/about-section.css";
 // import BecomeDriverSection from "./BecomeDriverSection";
 import CommonSection from "./CommonSection";
@@ -12,6 +12,14 @@ import { ScrollToTop } from "./ScrollToTop";
 import BecomeDriverSection from "./BecomeDriverSection";
 
 const Managment = ({ aboutClass }) => {
+  const [isBremer, setIsBremer] = useState(true);
+  const [isAustria, setIsAustria] = useState(false);
+  const [isWolfsburg, setIsWolfsburg] = useState(false);
+
+  // const changetoBremer = () => {};
+  // const changetoAustria = () => {};
+  // const changetoW = () => {};
+
   return (
     <>
       <div>
@@ -234,28 +242,75 @@ const Managment = ({ aboutClass }) => {
         </Row>
       </Container>
       <Container style={{ marginTop: "100px", marginBottom: "20px" }}>
+        <div
+          style={{
+            marginBottom: "20px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Button
+            active={isBremer}
+            style={{ marginRight: "10px", backgroundColor: "#202225" }}
+            className="map-btn"
+            variant="primary"
+            onClick={() => {
+              setIsBremer(true);
+              setIsAustria(false);
+              setIsWolfsburg(false);
+            }}
+          >
+            München, Germany
+          </Button>{" "}
+          <Button
+            active={isAustria}
+            style={{ marginRight: "10px", backgroundColor: "#202225" }}
+            className="map-btn"
+            variant="primary"
+            onClick={() => {
+              setIsBremer(false);
+              setIsAustria(true);
+              setIsWolfsburg(false);
+            }}
+          >
+            Raaba, Austria
+          </Button>{" "}
+          <Button
+            style={{ backgroundColor: "#202225" }}
+            active={isWolfsburg}
+            className="map-btn"
+            variant="primary"
+            onClick={() => {
+              setIsBremer(false);
+              setIsAustria(false);
+              setIsWolfsburg(true);
+            }}
+          >
+            Wolfsburg, Germany
+          </Button>{" "}
+        </div>
         <Row>
-          <iframe
-            style={{ width: "50%", height: "300px" }}
-            src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            title="r"
-          ></iframe>
-
-          <iframe
-            style={{ width: "50%", height: "300px" }}
-            src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            title="r"
-            marginwidth="0"
-          ></iframe>
-
-          <div style={{ marginTop: "20px" }}>
+          {isBremer ? (
+            <iframe
+              style={{ width: "100%", height: "300px" }}
+              src="https://maps.google.com/maps?q=Bremer%20Stra%C3%9Fe%2011%2080807%20M%C3%BCnchen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              title="r"
+            ></iframe>
+          ) : isAustria ? (
+            <iframe
+              style={{ width: "100%", height: "300px" }}
+              src="https://maps.google.com/maps?q=Dr.-Auner-Str.%2022%20A-8074%20Raaba&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              title="r"
+              marginwidth="0"
+            ></iframe>
+          ) : (
             <iframe
               style={{ width: "100%", height: "300px" }}
               src="https://maps.google.com/maps?q=Lessingstra%C3%9Fe%2072,%2038440,%20Wolfsburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -265,7 +320,7 @@ const Managment = ({ aboutClass }) => {
               marginwidth="0"
               title="r"
             ></iframe>
-          </div>
+          )}
         </Row>
       </Container>
       <BecomeDriverSection />
