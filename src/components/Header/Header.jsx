@@ -199,6 +199,7 @@ const Header = () => {
                   className={(navClass) =>
                     navClass.isActive ? "nav__active nav__item" : "nav__item"
                   }
+                  style={{ padding: "6px 12px" }}
                   onClick={toggleMenu}
                 >
                   Home
@@ -302,6 +303,7 @@ const Header = () => {
                   className={(navClass) =>
                     navClass.isActive ? "nav__active nav__item" : "nav__item"
                   }
+                  style={{ padding: "6px 12px" }}
                 >
                   Contact
                 </NavLink>
@@ -312,6 +314,7 @@ const Header = () => {
                   className={(navClass) =>
                     navClass.isActive ? "nav__active nav__item" : "nav__item"
                   }
+                  style={{ padding: "6px 12px" }}
                 >
                   Career
                 </NavLink>

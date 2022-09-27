@@ -237,13 +237,12 @@
   .menu__active {
     display: block;
   }
+    #Euroni {
+      color: #6b6600;
+    }
 }
 @media only screen and (max-width: 992px) {
   .fshihe {
     display: none;
-  }
-  #Euroni{
-    color: #6b6600;
-
   }
 }
