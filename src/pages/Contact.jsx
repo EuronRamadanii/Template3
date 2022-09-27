@@ -134,7 +134,7 @@ const Contact = () => {
                 </div>
                 <Container>
                   <Row style={{ width: "100%" }}>
-                    <img src={Context} alt="" />
+                    <img src={Context} alt="" style={{objectFit: 'cover'}} />
                   </Row>
                 </Container>
               </div>
