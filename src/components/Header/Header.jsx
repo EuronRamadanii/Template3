@@ -209,6 +209,13 @@ const Header = () => {
                     // dropdown-basic
                     id="Euroni"
                     // style={{ color: "#6b6600" }}
+                    active={
+                      location.pathname.includes("project") ||
+                      location.pathname.includes("beratung") ||
+                      location.pathname.includes("schulungen")
+                        ? true
+                        : false
+                    }
 
                     // className={(navClass) =>
                     //   navClass.isActive ? "nav__active nav__item" : "nav__item"
@@ -248,8 +255,12 @@ const Header = () => {
                   <Dropdown.Toggle
                     variant="secondary"
                     id="Euroni"
-                    className={(navClass) =>
-                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    active={
+                      location.pathname.includes("client") ||
+                      location.pathname.includes("management") ||
+                      location.pathname.includes("team")
+                        ? true
+                        : false
                     }
                   >
                     Company
